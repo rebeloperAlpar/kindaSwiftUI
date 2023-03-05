@@ -1,0 +1,11 @@
+framework module kindaSwiftUI {
+  umbrella header "kindaSwiftUI.h"
+
+  export *
+  module * { export * }
+}
+
+module kindaSwiftUI.Swift {
+  header "kindaSwiftUI-Swift.h"
+  requires objc
+}

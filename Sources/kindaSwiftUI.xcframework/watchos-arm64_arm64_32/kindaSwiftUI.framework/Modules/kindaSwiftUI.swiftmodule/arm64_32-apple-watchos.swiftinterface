@@ -1,0 +1,245 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64_32-apple-watchos9.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name kindaSwiftUI
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import Foundation
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+@_exported import kindaSwiftUI
+public struct LicenseKeyStatusResult {
+  public var isActive: Swift.Bool
+  public var message: Swift.String
+}
+public struct ModalValue {
+  public var index: Swift.Int
+  public var dependency: Any?
+  public init(index: Swift.Int, dependency: Any? = nil)
+}
+public struct TabRoot<Destination, Tab> where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab {
+  public init(_ root: Destination, tab: Tab)
+}
+@_Concurrency.MainActor(unsafe) public struct KindaSwiftUI247ContentView<Content> : SwiftUI.View where Content : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public init(@SwiftUI.ViewBuilder content: @escaping () -> Content)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI05KindaB16UI247ContentViewV4bodyQrvp", 0) __<Content>
+}
+extension SwiftUI.Color {
+  public init(hex: Swift.String)
+}
+extension SwiftUI.View {
+  public func fullScreenCover<Destination>(for modal: Destination, onDismiss: (() -> Swift.Void)? = nil) -> some SwiftUI.View where Destination : kindaSwiftUI.RouterDestination
+  
+}
+public struct CustomTabRoot<Destination, Tab, UnselectedTab> where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab {
+  public init(_ root: Destination, tab: Tab, unselectedTab: UnselectedTab)
+}
+public struct KindaSwiftUIContentView<Content> : SwiftUI.View where Content : SwiftUI.View {
+  public init(logLevel: kindaSwiftUI.KindaSwiftUILogLevel, logTypes: [kindaSwiftUI.KindaSwiftUILogType] = KindaSwiftUILogType.allCases, @SwiftUI.ViewBuilder content: @escaping () -> Content)
+  public init(log: kindaSwiftUI.KindaSwiftUILog, @SwiftUI.ViewBuilder content: @escaping () -> Content)
+  public init(@SwiftUI.ViewBuilder content: @escaping () -> Content)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI05KindaB13UIContentViewV4bodyQrvp", 0) __<Content>
+}
+@_Concurrency.MainActor(unsafe) public struct CustomTabRouterStack<Destination, Tab, UnselectedTab> : SwiftUI.View where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab {
+  @_Concurrency.MainActor(unsafe) public init(roots: [Destination], tabs: [Tab], unselectedTabs: [UnselectedTab] = [], tabSelection: Swift.Int = 0)
+  @_Concurrency.MainActor(unsafe) public init(_ roots: [kindaSwiftUI.CustomTabRoot<Destination, Tab, UnselectedTab>], tabSelection: Swift.Int = 0)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI20CustomTabRouterStackV4bodyQrvp", 0) __<Destination, Tab, UnselectedTab>
+}
+@_Concurrency.MainActor(unsafe) public struct RouterStack<Destination> : SwiftUI.View where Destination : kindaSwiftUI.RouterDestination {
+  @_Concurrency.MainActor(unsafe) public init(root: Destination)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI11RouterStackV4bodyQrvp", 0) __<Destination>
+}
+public class Router<Destination> : Combine.ObservableObject where Destination : kindaSwiftUI.RouterDestination {
+  @Combine.Published @_projectedValueProperty($modalsState) public var modalsState: [Swift.Array<Swift.Bool>] {
+    get
+    set
+    _modify
+  }
+  public var $modalsState: Combine.Published<[Swift.Array<Swift.Bool>]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($activeModalsIndices) public var activeModalsIndices: [[Swift.Int]] {
+    get
+    set
+    _modify
+  }
+  public var $activeModalsIndices: Combine.Published<[[Swift.Int]]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($tabSelection) public var tabSelection: Swift.Int {
+    get
+    set
+    _modify
+  }
+  public var $tabSelection: Combine.Published<Swift.Int>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($paths) public var paths: [Swift.Array<SwiftUI.NavigationPath>] {
+    get
+    set
+    _modify
+  }
+  public var $paths: Combine.Published<[Swift.Array<SwiftUI.NavigationPath>]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($pathIndex) public var pathIndex: [Swift.Int] {
+    get
+    set
+    _modify
+  }
+  public var $pathIndex: Combine.Published<[Swift.Int]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($modalsCount) public var modalsCount: [Swift.Int] {
+    get
+    set
+    _modify
+  }
+  public var $modalsCount: Combine.Published<[Swift.Int]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($stackedViewsInModals) public var stackedViewsInModals: [[Swift.Int]] {
+    get
+    set
+    _modify
+  }
+  public var $stackedViewsInModals: Combine.Published<[[Swift.Int]]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init()
+  public func push(_ destination: Destination, completion: @escaping () -> () = {})
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func push(_ destination: Destination) async
+  #endif
+  public func present<T>(_ destination: Destination, dependencyLink: SwiftUI.Binding<T>, completion: @escaping () -> () = {})
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func present<T>(_ destination: Destination, dependencyLink: SwiftUI.Binding<T>) async
+  #endif
+  public func present(_ destination: Destination, completion: @escaping () -> () = {})
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func present(_ destination: Destination) async
+  #endif
+  public func pop(_ type: kindaSwiftUI.PopType = .one, completion: @escaping () -> () = {})
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func pop(_ type: kindaSwiftUI.PopType = .one) async
+  #endif
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public enum PopType {
+  case one
+  case the(last: Swift.Int)
+  case to(index: Swift.Int)
+  case toRoot
+  case toNearestRoot
+  case theLastWith(style: kindaSwiftUI.PopStyle, last: Swift.Int)
+  case toIndexWith(style: kindaSwiftUI.PopStyle, index: Swift.Int)
+  case toRootWith(style: kindaSwiftUI.PopStyle)
+  case toNearestRootWith(style: kindaSwiftUI.PopStyle)
+}
+public enum PopStyle : Swift.String {
+  case oneByOne, shortest
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol RouterDestination : Swift.Hashable, SwiftUI.View {
+  var modalValue: kindaSwiftUI.ModalValue { get }
+  init?(modalValue: kindaSwiftUI.ModalValue)
+}
+public protocol RouterTab : Swift.Hashable, SwiftUI.View {
+}
+public protocol RouterUnselectedTab : Swift.Hashable, SwiftUI.View {
+}
+public enum KindaSwiftUILogType : Swift.String, Swift.CaseIterable {
+  case developer
+  case navigationRouter
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [kindaSwiftUI.KindaSwiftUILogType]
+  public typealias RawValue = Swift.String
+  public static var allCases: [kindaSwiftUI.KindaSwiftUILogType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct KindaSwiftUILogCenter {
+  public static var log: kindaSwiftUI.KindaSwiftUILog
+}
+public struct KindaSwiftUILog {
+  public var level: kindaSwiftUI.KindaSwiftUILogLevel
+  public var types: [kindaSwiftUI.KindaSwiftUILogType]
+  public init(_ level: kindaSwiftUI.KindaSwiftUILogLevel = .none, types: [kindaSwiftUI.KindaSwiftUILogType] = [])
+}
+public enum KindaSwiftUILogLevel {
+  case none, debug, full
+  public static func == (a: kindaSwiftUI.KindaSwiftUILogLevel, b: kindaSwiftUI.KindaSwiftUILogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public func log(_ level: kindaSwiftUI.KindaSwiftUILogLevel = .debug, type: kindaSwiftUI.KindaSwiftUILogType = .developer, dateFormat: Swift.String = "HH:mm:ss.SSSS", _ items: Any...)
+public struct LicenseKeyCenter {
+  @discardableResult
+  public static func isLicenseActive() -> Swift.Bool
+  @discardableResult
+  public static func getLicenseKeyStatusResult() -> kindaSwiftUI.LicenseKeyStatusResult
+}
+public struct PoweredByKindaSwiftUIView : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI014PoweredByKindaB6UIViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor(unsafe) public struct TabRouterStack<Destination, Tab> : SwiftUI.View where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab {
+  @_Concurrency.MainActor(unsafe) public init(roots: [Destination], tabs: [Tab], tabSelection: Swift.Int = 0)
+  @_Concurrency.MainActor(unsafe) public init(_ roots: [kindaSwiftUI.TabRoot<Destination, Tab>], tabSelection: Swift.Int = 0)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI14TabRouterStackV4bodyQrvp", 0) __<Destination, Tab>
+}
+open class RouterModalDependencyLinker : Foundation.ObservableObject {
+  public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension kindaSwiftUI.PopStyle : Swift.Equatable {}
+extension kindaSwiftUI.PopStyle : Swift.Hashable {}
+extension kindaSwiftUI.PopStyle : Swift.RawRepresentable {}
+extension kindaSwiftUI.KindaSwiftUILogType : Swift.Equatable {}
+extension kindaSwiftUI.KindaSwiftUILogType : Swift.Hashable {}
+extension kindaSwiftUI.KindaSwiftUILogType : Swift.RawRepresentable {}
+extension kindaSwiftUI.KindaSwiftUILogLevel : Swift.Equatable {}
+extension kindaSwiftUI.KindaSwiftUILogLevel : Swift.Hashable {}
