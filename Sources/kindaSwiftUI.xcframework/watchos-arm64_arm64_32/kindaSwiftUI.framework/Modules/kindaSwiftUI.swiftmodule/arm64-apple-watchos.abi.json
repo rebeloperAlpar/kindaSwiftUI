@@ -6334,6 +6334,13 @@
       "value": "\"dx7pYPFV4rMEF5Dj_NSBaphcCm5R8DN\""
     },
     {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/License\/LicenseKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 1504,
+      "length": 33,
+      "value": "\"HEsz6Q5ThoMHVdLF_NTXy0zHeFiP84H\""
+    },
+    {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/RouterStack\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 245,
