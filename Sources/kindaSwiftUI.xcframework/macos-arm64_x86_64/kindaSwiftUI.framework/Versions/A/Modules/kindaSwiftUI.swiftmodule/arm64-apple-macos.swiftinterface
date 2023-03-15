@@ -18,6 +18,17 @@ public struct ModalValue {
   public var dependency: Any?
   public init(index: Swift.Int, dependency: Any? = nil)
 }
+@_Concurrency.MainActor(unsafe) public struct Page<Destination, Content> : SwiftUI.View where Destination : kindaSwiftUI.RouterDestination, Content : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var content: (kindaSwiftUI.PageContext<Destination>) -> Content
+  @_Concurrency.MainActor(unsafe) public init(content: @escaping (kindaSwiftUI.PageContext<Destination>) -> Content)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI4PageV4bodyQrvp", 0) __<Destination, Content>
+}
+public struct PageContext<Destination> where Destination : kindaSwiftUI.RouterDestination {
+  public var router: kindaSwiftUI.Router<Destination>
+}
 @_Concurrency.MainActor(unsafe) public struct KindaSwiftUI247ContentView<Content> : SwiftUI.View where Content : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public init(@SwiftUI.ViewBuilder content: @escaping () -> Content)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
