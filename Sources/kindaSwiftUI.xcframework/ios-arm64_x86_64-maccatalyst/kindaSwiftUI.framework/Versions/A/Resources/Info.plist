@@ -42,5 +42,9 @@
 	<string>14C18</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>13.1</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>2</integer>
+	</array>
 </dict>
 </plist>

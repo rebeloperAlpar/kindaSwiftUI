@@ -922,6 +922,68 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TabRoot",
+        "printedName": "TabRoot",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:tab:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TabRoot",
+                "printedName": "kindaSwiftUI.TabRoot<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:12kindaSwiftUI7TabRootV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12kindaSwiftUI7TabRootV_3tabACyxq_Gx_q_tcfc",
+            "mangledName": "$s12kindaSwiftUI7TabRootV_3tabACyxq_Gx_q_tcfc",
+            "moduleName": "kindaSwiftUI",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab>",
+            "sugared_genericSig": "<Destination, Tab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12kindaSwiftUI7TabRootV",
+        "mangledName": "$s12kindaSwiftUI7TabRootV",
+        "moduleName": "kindaSwiftUI",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab>",
+        "sugared_genericSig": "<Destination, Tab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
@@ -1112,6 +1174,78 @@
         "moduleName": "kindaSwiftUI",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CustomTabRoot",
+        "printedName": "CustomTabRoot",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:tab:unselectedTab:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomTabRoot",
+                "printedName": "kindaSwiftUI.CustomTabRoot<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:12kindaSwiftUI13CustomTabRootV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_2"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12kindaSwiftUI13CustomTabRootV_3tab010unselectedE0ACyxq_q0_Gx_q_q0_tcfc",
+            "mangledName": "$s12kindaSwiftUI13CustomTabRootV_3tab010unselectedE0ACyxq_q0_Gx_q_q0_tcfc",
+            "moduleName": "kindaSwiftUI",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab, τ_0_2 : kindaSwiftUI.RouterUnselectedTab>",
+            "sugared_genericSig": "<Destination, Tab, UnselectedTab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12kindaSwiftUI13CustomTabRootV",
+        "mangledName": "$s12kindaSwiftUI13CustomTabRootV",
+        "moduleName": "kindaSwiftUI",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab, τ_0_2 : kindaSwiftUI.RouterUnselectedTab>",
+        "sugared_genericSig": "<Destination, Tab, UnselectedTab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab>",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -1404,6 +1538,280 @@
         "moduleName": "kindaSwiftUI",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CustomTabRouterStack",
+        "printedName": "CustomTabRouterStack",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(roots:tabs:unselectedTabs:tabSelection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomTabRouterStack",
+                "printedName": "kindaSwiftUI.CustomTabRouterStack<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:12kindaSwiftUI20CustomTabRouterStackV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_1]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_2]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12kindaSwiftUI20CustomTabRouterStackV5roots4tabs14unselectedTabs12tabSelectionACyxq_q0_GSayxG_Sayq_GSayq0_GSitcfc",
+            "mangledName": "$s12kindaSwiftUI20CustomTabRouterStackV5roots4tabs14unselectedTabs12tabSelectionACyxq_q0_GSayxG_Sayq_GSayq0_GSitcfc",
+            "moduleName": "kindaSwiftUI",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab, τ_0_2 : kindaSwiftUI.RouterUnselectedTab>",
+            "sugared_genericSig": "<Destination, Tab, UnselectedTab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:tabSelection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomTabRouterStack",
+                "printedName": "kindaSwiftUI.CustomTabRouterStack<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:12kindaSwiftUI20CustomTabRouterStackV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[kindaSwiftUI.CustomTabRoot<τ_0_0, τ_0_1, τ_0_2>]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomTabRoot",
+                    "printedName": "kindaSwiftUI.CustomTabRoot<τ_0_0, τ_0_1, τ_0_2>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_2"
+                      }
+                    ],
+                    "usr": "s:12kindaSwiftUI13CustomTabRootV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12kindaSwiftUI20CustomTabRouterStackV_12tabSelectionACyxq_q0_GSayAA0dE4RootVyxq_q0_GG_Sitcfc",
+            "mangledName": "$s12kindaSwiftUI20CustomTabRouterStackV_12tabSelectionACyxq_q0_GSayAA0dE4RootVyxq_q0_GG_Sitcfc",
+            "moduleName": "kindaSwiftUI",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab, τ_0_2 : kindaSwiftUI.RouterUnselectedTab>",
+            "sugared_genericSig": "<Destination, Tab, UnselectedTab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12kindaSwiftUI20CustomTabRouterStackV4bodyQrvp",
+            "mangledName": "$s12kindaSwiftUI20CustomTabRouterStackV4bodyQrvp",
+            "moduleName": "kindaSwiftUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI20CustomTabRouterStackV4bodyQrvg",
+                "mangledName": "$s12kindaSwiftUI20CustomTabRouterStackV4bodyQrvg",
+                "moduleName": "kindaSwiftUI",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab, τ_0_2 : kindaSwiftUI.RouterUnselectedTab>",
+                "sugared_genericSig": "<Destination, Tab, UnselectedTab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab>",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12kindaSwiftUI20CustomTabRouterStackV",
+        "mangledName": "$s12kindaSwiftUI20CustomTabRouterStackV",
+        "moduleName": "kindaSwiftUI",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab, τ_0_2 : kindaSwiftUI.RouterUnselectedTab>",
+        "sugared_genericSig": "<Destination, Tab, UnselectedTab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab>",
+        "declAttributes": [
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          }
         ]
       },
       {
@@ -4457,6 +4865,82 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "RouterTab",
+        "printedName": "RouterTab",
+        "declKind": "Protocol",
+        "usr": "s:12kindaSwiftUI9RouterTabP",
+        "mangledName": "$s12kindaSwiftUI9RouterTabP",
+        "moduleName": "kindaSwiftUI",
+        "genericSig": "<τ_0_0 : Swift.Hashable, τ_0_0 : SwiftUI.View>",
+        "sugared_genericSig": "<Self : Swift.Hashable, Self : SwiftUI.View>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RouterUnselectedTab",
+        "printedName": "RouterUnselectedTab",
+        "declKind": "Protocol",
+        "usr": "s:12kindaSwiftUI19RouterUnselectedTabP",
+        "mangledName": "$s12kindaSwiftUI19RouterUnselectedTabP",
+        "moduleName": "kindaSwiftUI",
+        "genericSig": "<τ_0_0 : Swift.Hashable, τ_0_0 : SwiftUI.View>",
+        "sugared_genericSig": "<Self : Swift.Hashable, Self : SwiftUI.View>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
@@ -5589,6 +6073,251 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TabRouterStack",
+        "printedName": "TabRouterStack",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(roots:tabs:tabSelection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TabRouterStack",
+                "printedName": "kindaSwiftUI.TabRouterStack<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:12kindaSwiftUI14TabRouterStackV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_1]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12kindaSwiftUI14TabRouterStackV5roots4tabs12tabSelectionACyxq_GSayxG_Sayq_GSitcfc",
+            "mangledName": "$s12kindaSwiftUI14TabRouterStackV5roots4tabs12tabSelectionACyxq_GSayxG_Sayq_GSitcfc",
+            "moduleName": "kindaSwiftUI",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab>",
+            "sugared_genericSig": "<Destination, Tab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:tabSelection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TabRouterStack",
+                "printedName": "kindaSwiftUI.TabRouterStack<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:12kindaSwiftUI14TabRouterStackV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[kindaSwiftUI.TabRoot<τ_0_0, τ_0_1>]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TabRoot",
+                    "printedName": "kindaSwiftUI.TabRoot<τ_0_0, τ_0_1>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:12kindaSwiftUI7TabRootV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12kindaSwiftUI14TabRouterStackV_12tabSelectionACyxq_GSayAA0D4RootVyxq_GG_Sitcfc",
+            "mangledName": "$s12kindaSwiftUI14TabRouterStackV_12tabSelectionACyxq_GSayAA0D4RootVyxq_GG_Sitcfc",
+            "moduleName": "kindaSwiftUI",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab>",
+            "sugared_genericSig": "<Destination, Tab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12kindaSwiftUI14TabRouterStackV4bodyQrvp",
+            "mangledName": "$s12kindaSwiftUI14TabRouterStackV4bodyQrvp",
+            "moduleName": "kindaSwiftUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI14TabRouterStackV4bodyQrvg",
+                "mangledName": "$s12kindaSwiftUI14TabRouterStackV4bodyQrvg",
+                "moduleName": "kindaSwiftUI",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab>",
+                "sugared_genericSig": "<Destination, Tab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab>",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12kindaSwiftUI14TabRouterStackV",
+        "mangledName": "$s12kindaSwiftUI14TabRouterStackV",
+        "moduleName": "kindaSwiftUI",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : kindaSwiftUI.RouterDestination, τ_0_1 : kindaSwiftUI.RouterTab>",
+        "sugared_genericSig": "<Destination, Tab where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab>",
+        "declAttributes": [
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
@@ -5743,6 +6472,35 @@
           },
           {
             "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ShapeStyle",
+            "printedName": "ShapeStyle",
+            "usr": "s:7SwiftUI10ShapeStyleP",
+            "mangledName": "$s7SwiftUI10ShapeStyleP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Transferable",
             "printedName": "Transferable",
             "children": [
@@ -5775,35 +6533,6 @@
             ],
             "usr": "s:16CoreTransferable0B0P",
             "mangledName": "$s16CoreTransferable0B0P"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ShapeStyle",
-            "printedName": "ShapeStyle",
-            "usr": "s:7SwiftUI10ShapeStyleP",
-            "mangledName": "$s7SwiftUI10ShapeStyleP"
           }
         ]
       },
@@ -5812,6 +6541,68 @@
         "name": "View",
         "printedName": "View",
         "children": [
+          {
+            "kind": "Function",
+            "name": "fullScreenCover",
+            "printedName": "fullScreenCover(for:onDismiss:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP05kindaaB0E15fullScreenCover3for9onDismissQrqd___yycSgtAD17RouterDestinationRd__lF",
+            "mangledName": "$s7SwiftUI4ViewP05kindaaB0E15fullScreenCover3for9onDismissQrqd___yycSgtAD17RouterDestinationRd__lF",
+            "moduleName": "kindaSwiftUI",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SwiftUI.View, τ_1_0 : kindaSwiftUI.RouterDestination>",
+            "sugared_genericSig": "<Self, Destination where Self : SwiftUI.View, Destination : kindaSwiftUI.RouterDestination>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
           {
             "kind": "Function",
             "name": "sheet",
@@ -5926,6 +6717,34 @@
       "offset": 390,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Modals\/FullScreenCoverRouterModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 409,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Tabs\/CustomTabRouterStack.swift",
+      "kind": "Array",
+      "offset": 889,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Tabs\/CustomTabRouterStack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 913,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Tabs\/CustomTabRouterStack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1905,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/RouterStack\/RootNavigationStack.swift",
@@ -6066,6 +6885,20 @@
       "offset": 1581,
       "length": 33,
       "value": "\"nw1dxfBL2L3KeZtS_NWL8EExbkIw4JA\""
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/License\/LicenseKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 1658,
+      "length": 33,
+      "value": "\"Y4aW67OucHSPGMZ2_Lq4nIFAaeNHwIk\""
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/License\/LicenseKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 1735,
+      "length": 33,
+      "value": "\"dD9JmeKCZAX5daNi_LqshJ9dNqKOcjo\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/RouterStack\/Router.swift",
@@ -6262,6 +7095,20 @@
       "offset": 210,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Tabs\/TabRouterStack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 721,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Tabs\/TabRouterStack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1593,
+      "length": 1,
+      "value": "0"
     }
   ]
 }
