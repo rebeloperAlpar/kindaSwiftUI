@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		Lpb8bmDaaAckeXStNBrL0MbyeEk=
+		Fj7ybV2Usfcy/mIU1QXyYyUyGNA=
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		OC54nk3mu4uAkED/u3MviTcwajE=
+		Fah3X68Oo4Cn/udjuF5LMe9y3IU=
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		Lpb8bmDaaAckeXStNBrL0MbyeEk=
+		Fj7ybV2Usfcy/mIU1QXyYyUyGNA=
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		1HXJlAXNQ/3amoiMuZZvnqq5kvE=
+		cRMY9hORVk3m739iwootsiCcdeY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8dZE8KVTZ3+Ef0Nuhv1cpPugMLVqWkx2qgF2EVt9DJc=
+			BrwrkhXPkLHAn5TBC1nCJKNpZAfuBhhg0dNxNLdQucA=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KgmB061pY/o9XRO9Ad/Xbh2SFxE3TVeu6/vLjfk3bm0=
+			tOZyj22FHKdWw1MPbb3TK/NB653DTAOCg5vAB7FmFdQ=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8dZE8KVTZ3+Ef0Nuhv1cpPugMLVqWkx2qgF2EVt9DJc=
+			BrwrkhXPkLHAn5TBC1nCJKNpZAfuBhhg0dNxNLdQucA=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YpihM5NxiTNs1d6UqT1O4cjmm8oqnT86OWE9tlT/lk8=
+			htVnOzEGiwgmC7TXYnadXLwHrmknmXz5o3iTuijrV9Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
