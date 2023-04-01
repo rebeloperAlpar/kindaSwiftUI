@@ -1,8 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios16.2-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name kindaSwiftUI
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-macos13.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name kindaSwiftUI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
+import Combine/*.Combine*/
 import Foundation
 import Swift
 import SwiftUI
@@ -29,9 +30,6 @@ public struct ModalValue {
 public struct PageContext<Destination> where Destination : kindaSwiftUI.RouterDestination {
   public var router: kindaSwiftUI.Router<Destination>
 }
-public struct TabRoot<Destination, Tab> where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab {
-  public init(_ root: Destination, tab: Tab)
-}
 @_Concurrency.MainActor(unsafe) public struct KindaSwiftUI247ContentView<Content> : SwiftUI.View where Content : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public init(@SwiftUI.ViewBuilder content: @escaping () -> Content)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
@@ -42,13 +40,6 @@ public struct TabRoot<Destination, Tab> where Destination : kindaSwiftUI.RouterD
 extension SwiftUI.Color {
   public init(hex: Swift.String)
 }
-extension SwiftUI.View {
-  public func fullScreenCover<Destination>(for modal: Destination, onDismiss: (() -> Swift.Void)? = nil) -> some SwiftUI.View where Destination : kindaSwiftUI.RouterDestination
-  
-}
-public struct CustomTabRoot<Destination, Tab, UnselectedTab> where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab {
-  public init(_ root: Destination, tab: Tab, unselectedTab: UnselectedTab)
-}
 public struct KindaSwiftUIContentView<Content> : SwiftUI.View where Content : SwiftUI.View {
   public init(logLevel: kindaSwiftUI.KindaSwiftUILogLevel, logTypes: [kindaSwiftUI.KindaSwiftUILogType] = KindaSwiftUILogType.allCases, @SwiftUI.ViewBuilder content: @escaping () -> Content)
   public init(log: kindaSwiftUI.KindaSwiftUILog, @SwiftUI.ViewBuilder content: @escaping () -> Content)
@@ -57,14 +48,6 @@ public struct KindaSwiftUIContentView<Content> : SwiftUI.View where Content : Sw
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI05KindaB13UIContentViewV4bodyQrvp", 0) __<Content>
-}
-@_Concurrency.MainActor(unsafe) public struct CustomTabRouterStack<Destination, Tab, UnselectedTab> : SwiftUI.View where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab {
-  @_Concurrency.MainActor(unsafe) public init(roots: [Destination], tabs: [Tab], unselectedTabs: [UnselectedTab] = [], tabSelection: Swift.Int = 0)
-  @_Concurrency.MainActor(unsafe) public init(_ roots: [kindaSwiftUI.CustomTabRoot<Destination, Tab, UnselectedTab>], tabSelection: Swift.Int = 0)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI20CustomTabRouterStackV4bodyQrvp", 0) __<Destination, Tab, UnselectedTab>
 }
 @_Concurrency.MainActor(unsafe) public struct RouterStack<Destination> : SwiftUI.View where Destination : kindaSwiftUI.RouterDestination {
   @_Concurrency.MainActor(unsafe) public init(root: Destination)
@@ -191,10 +174,6 @@ public protocol RouterDestination : Swift.Hashable, SwiftUI.View {
   var modalValue: kindaSwiftUI.ModalValue { get }
   init?(modalValue: kindaSwiftUI.ModalValue)
 }
-public protocol RouterTab : Swift.Hashable, SwiftUI.View {
-}
-public protocol RouterUnselectedTab : Swift.Hashable, SwiftUI.View {
-}
 public enum KindaSwiftUILogType : Swift.String, Swift.CaseIterable {
   case developer
   case navigationRouter
@@ -236,14 +215,6 @@ public struct PoweredByKindaSwiftUIView : SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI014PoweredByKindaB6UIViewV4bodyQrvp", 0) __
-}
-@_Concurrency.MainActor(unsafe) public struct TabRouterStack<Destination, Tab> : SwiftUI.View where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab {
-  @_Concurrency.MainActor(unsafe) public init(roots: [Destination], tabs: [Tab], tabSelection: Swift.Int = 0)
-  @_Concurrency.MainActor(unsafe) public init(_ roots: [kindaSwiftUI.TabRoot<Destination, Tab>], tabSelection: Swift.Int = 0)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI14TabRouterStackV4bodyQrvp", 0) __<Destination, Tab>
 }
 open class RouterModalDependencyLinker : Foundation.ObservableObject {
   public init()

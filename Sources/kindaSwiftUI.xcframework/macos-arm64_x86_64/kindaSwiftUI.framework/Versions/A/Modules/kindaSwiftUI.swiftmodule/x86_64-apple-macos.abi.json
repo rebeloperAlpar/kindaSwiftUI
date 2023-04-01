@@ -7360,35 +7360,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ShapeStyle",
-            "printedName": "ShapeStyle",
-            "usr": "s:7SwiftUI10ShapeStyleP",
-            "mangledName": "$s7SwiftUI10ShapeStyleP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Transferable",
             "printedName": "Transferable",
             "children": [
@@ -7421,8 +7392,159 @@
             ],
             "usr": "s:16CoreTransferable0B0P",
             "mangledName": "$s16CoreTransferable0B0P"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ShapeStyle",
+            "printedName": "ShapeStyle",
+            "usr": "s:7SwiftUI10ShapeStyleP",
+            "mangledName": "$s7SwiftUI10ShapeStyleP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "View",
+        "printedName": "View",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sheet",
+            "printedName": "sheet(for:presentationDetents:presentationDragIndicatorVisibility:onDismiss:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModifiedContent",
+                "printedName": "SwiftUI.ModifiedContent<τ_0_0, kindaSwiftUI.SheetRouterModifier<τ_1_0>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SheetRouterModifier",
+                    "printedName": "kindaSwiftUI.SheetRouterModifier<τ_1_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_1_0"
+                      }
+                    ],
+                    "usr": "s:12kindaSwiftUI19SheetRouterModifierV"
+                  }
+                ],
+                "usr": "s:7SwiftUI15ModifiedContentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<SwiftUI.PresentationDetent>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresentationDetent",
+                    "printedName": "SwiftUI.PresentationDetent",
+                    "usr": "s:7SwiftUI18PresentationDetentV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Visibility",
+                "printedName": "SwiftUI.Visibility",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI10VisibilityO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP05kindaaB0E5sheet3for19presentationDetents0G23DragIndicatorVisibility9onDismissQrqd___ShyAA18PresentationDetentVGAA0K0OyycSgtAD17RouterDestinationRd__lF",
+            "mangledName": "$s7SwiftUI4ViewP05kindaaB0E5sheet3for19presentationDetents0G23DragIndicatorVisibility9onDismissQrqd___ShyAA18PresentationDetentVGAA0K0OyycSgtAD17RouterDestinationRd__lF",
+            "moduleName": "kindaSwiftUI",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SwiftUI.View, τ_1_0 : kindaSwiftUI.RouterDestination>",
+            "sugared_genericSig": "<Self, Destination where Self : SwiftUI.View, Destination : kindaSwiftUI.RouterDestination>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7SwiftUI4ViewP",
+        "mangledName": "$s7SwiftUI4ViewP",
+        "moduleName": "SwiftUI",
+        "genericSig": "<τ_0_0.Body : SwiftUI.View>",
+        "sugared_genericSig": "<Self.Body : SwiftUI.View>",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
+        "declAttributes": [
+          "TypeEraser",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true
       }
     ],
     "json_format_version": 8
@@ -8708,6 +8830,34 @@
       "offset": 14945,
       "length": 1,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Modals\/SheetRouterModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 514,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Modals\/SheetRouterModifier.swift",
+      "kind": "Array",
+      "offset": 624,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Modals\/SheetRouterModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1563,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Modals\/SheetRouterModifier.swift",
+      "kind": "Array",
+      "offset": 2486,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/License\/LicenseManager.swift",
