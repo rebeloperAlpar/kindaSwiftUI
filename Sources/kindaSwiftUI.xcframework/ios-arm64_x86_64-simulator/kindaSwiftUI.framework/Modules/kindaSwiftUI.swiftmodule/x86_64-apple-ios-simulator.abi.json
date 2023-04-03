@@ -200,6 +200,233 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "kindaSwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PresentationCompactAdaptation",
+        "printedName": "PresentationCompactAdaptation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "horizontal",
+            "printedName": "horizontal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationAdaptation",
+                "printedName": "SwiftUI.PresentationAdaptation",
+                "usr": "s:7SwiftUI22PresentationAdaptationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvp",
+            "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvp",
+            "moduleName": "kindaSwiftUI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresentationAdaptation",
+                    "printedName": "SwiftUI.PresentationAdaptation",
+                    "usr": "s:7SwiftUI22PresentationAdaptationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvg",
+                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvg",
+                "moduleName": "kindaSwiftUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresentationAdaptation",
+                    "printedName": "SwiftUI.PresentationAdaptation",
+                    "usr": "s:7SwiftUI22PresentationAdaptationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvs",
+                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvs",
+                "moduleName": "kindaSwiftUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0VvM",
+                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0VvM",
+                "moduleName": "kindaSwiftUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vertical",
+            "printedName": "vertical",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationAdaptation",
+                "printedName": "SwiftUI.PresentationAdaptation",
+                "usr": "s:7SwiftUI22PresentationAdaptationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvp",
+            "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvp",
+            "moduleName": "kindaSwiftUI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresentationAdaptation",
+                    "printedName": "SwiftUI.PresentationAdaptation",
+                    "usr": "s:7SwiftUI22PresentationAdaptationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvg",
+                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvg",
+                "moduleName": "kindaSwiftUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresentationAdaptation",
+                    "printedName": "SwiftUI.PresentationAdaptation",
+                    "usr": "s:7SwiftUI22PresentationAdaptationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvs",
+                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvs",
+                "moduleName": "kindaSwiftUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0VvM",
+                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0VvM",
+                "moduleName": "kindaSwiftUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(horizontal:vertical:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationCompactAdaptation",
+                "printedName": "kindaSwiftUI.PresentationCompactAdaptation",
+                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationAdaptation",
+                "printedName": "SwiftUI.PresentationAdaptation",
+                "usr": "s:7SwiftUI22PresentationAdaptationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationAdaptation",
+                "printedName": "SwiftUI.PresentationAdaptation",
+                "usr": "s:7SwiftUI22PresentationAdaptationV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV10horizontal8verticalAC0bC00dF0V_AHtcfc",
+            "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV10horizontal8verticalAC0bC00dF0V_AHtcfc",
+            "moduleName": "kindaSwiftUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV",
+        "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV",
+        "moduleName": "kindaSwiftUI",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -21603,6 +21830,33 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "kindaSwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "kindaSwiftUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "kindaSwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "PresentationOptions",
         "printedName": "PresentationOptions",
@@ -22311,6 +22565,112 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(detents:dragIndicatorVisibility:cornerRadius:compactAdaptation:contentInteraction:backgroundInteraction:backgroundView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationOptions",
+                "printedName": "kindaSwiftUI.PresentationOptions",
+                "usr": "s:12kindaSwiftUI19PresentationOptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<SwiftUI.PresentationDetent>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresentationDetent",
+                    "printedName": "SwiftUI.PresentationDetent",
+                    "usr": "s:7SwiftUI18PresentationDetentV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Visibility",
+                "printedName": "SwiftUI.Visibility",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI10VisibilityO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationCompactAdaptation",
+                "printedName": "kindaSwiftUI.PresentationCompactAdaptation",
+                "hasDefaultArg": true,
+                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationContentInteraction",
+                "printedName": "SwiftUI.PresentationContentInteraction",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI30PresentationContentInteractionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationBackgroundInteraction",
+                "printedName": "SwiftUI.PresentationBackgroundInteraction",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI33PresentationBackgroundInteractionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> SwiftUI.AnyView)?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> SwiftUI.AnyView",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyView",
+                        "printedName": "SwiftUI.AnyView",
+                        "usr": "s:7SwiftUI7AnyViewV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12kindaSwiftUI19PresentationOptionsV7detents23dragIndicatorVisibility12cornerRadius17compactAdaptation18contentInteraction010backgroundO00P4ViewACShy0bC00D6DetentVG_AK0I0O14CoreFoundation7CGFloatVSgAA0d7CompactM0VAK0d7ContentO0VAK0d10BackgroundO0VAK03AnyQ0VycSgtcfc",
+            "mangledName": "$s12kindaSwiftUI19PresentationOptionsV7detents23dragIndicatorVisibility12cornerRadius17compactAdaptation18contentInteraction010backgroundO00P4ViewACShy0bC00D6DetentVG_AK0I0O12CoreGraphics7CGFloatVSgAA0d7CompactM0VAK0d7ContentO0VAK0d10BackgroundO0VAK03AnyQ0VycSgtcfc",
+            "moduleName": "kindaSwiftUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
@@ -22320,207 +22680,6 @@
         "declAttributes": [
           "AccessControl"
         ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PresentationCompactAdaptation",
-        "printedName": "PresentationCompactAdaptation",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "horizontal",
-            "printedName": "horizontal",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PresentationAdaptation",
-                "printedName": "SwiftUI.PresentationAdaptation",
-                "usr": "s:7SwiftUI22PresentationAdaptationV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvp",
-            "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvp",
-            "moduleName": "kindaSwiftUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PresentationAdaptation",
-                    "printedName": "SwiftUI.PresentationAdaptation",
-                    "usr": "s:7SwiftUI22PresentationAdaptationV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvg",
-                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvg",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PresentationAdaptation",
-                    "printedName": "SwiftUI.PresentationAdaptation",
-                    "usr": "s:7SwiftUI22PresentationAdaptationV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvs",
-                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0Vvs",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0VvM",
-                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV10horizontal0bC00dF0VvM",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "vertical",
-            "printedName": "vertical",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PresentationAdaptation",
-                "printedName": "SwiftUI.PresentationAdaptation",
-                "usr": "s:7SwiftUI22PresentationAdaptationV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvp",
-            "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvp",
-            "moduleName": "kindaSwiftUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PresentationAdaptation",
-                    "printedName": "SwiftUI.PresentationAdaptation",
-                    "usr": "s:7SwiftUI22PresentationAdaptationV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvg",
-                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvg",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PresentationAdaptation",
-                    "printedName": "SwiftUI.PresentationAdaptation",
-                    "usr": "s:7SwiftUI22PresentationAdaptationV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvs",
-                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0Vvs",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0VvM",
-                "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV8vertical0bC00dF0VvM",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:12kindaSwiftUI29PresentationCompactAdaptationV",
-        "mangledName": "$s12kindaSwiftUI29PresentationCompactAdaptationV",
-        "moduleName": "kindaSwiftUI",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "kindaSwiftUI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "kindaSwiftUI"
       },
       {
         "kind": "Import",
@@ -28526,6 +28685,7 @@
                 "kind": "TypeNominal",
                 "name": "PresentationOptions",
                 "printedName": "kindaSwiftUI.PresentationOptions",
+                "hasDefaultArg": true,
                 "usr": "s:12kindaSwiftUI19PresentationOptionsV"
               },
               {
@@ -29027,29 +29187,22 @@
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/RouterStack\/RootNavigationStack.swift",
-      "kind": "Array",
-      "offset": 1041,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/RouterStack\/RootNavigationStack.swift",
       "kind": "StringLiteral",
-      "offset": 1848,
+      "offset": 1945,
       "length": 62,
       "value": "\"Set path index \""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/RouterStack\/RootNavigationStack.swift",
       "kind": "StringLiteral",
-      "offset": 1883,
+      "offset": 1980,
       "length": 3,
       "value": "\" for tab index \""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/RouterStack\/RootNavigationStack.swift",
       "kind": "StringLiteral",
-      "offset": 1909,
+      "offset": 2006,
       "length": 2,
       "value": "\"\""
     },
@@ -30746,6 +30899,13 @@
       "offset": 1290,
       "length": 7,
       "value": "\"trial\""
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Modals\/PresentationOptions.swift",
+      "kind": "Array",
+      "offset": 598,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertActionLabel.swift",
