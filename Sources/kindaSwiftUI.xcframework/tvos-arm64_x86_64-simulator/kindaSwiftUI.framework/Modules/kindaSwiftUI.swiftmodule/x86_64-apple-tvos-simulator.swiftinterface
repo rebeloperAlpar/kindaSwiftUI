@@ -19,6 +19,12 @@ public struct ModalValue {
   public var dependency: Any?
   public init(index: Swift.Int, dependency: Any? = nil)
 }
+public struct AlertAction : Swift.Identifiable {
+  public let id: Foundation.UUID
+  public init(role: SwiftUI.ButtonRole? = nil, label: Swift.String, action: (() -> Swift.Void)? = nil)
+  public init(role: SwiftUI.ButtonRole? = nil, label: kindaSwiftUI.AlertActionLabel, action: (() -> Swift.Void)? = nil)
+  public typealias ID = Foundation.UUID
+}
 @_Concurrency.MainActor(unsafe) public struct Page<Destination, Content> : SwiftUI.View where Destination : kindaSwiftUI.RouterDestination, Content : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var content: (kindaSwiftUI.PageContext<Destination>) -> Content
   @_Concurrency.MainActor(unsafe) public init(content: @escaping (kindaSwiftUI.PageContext<Destination>) -> Content)
@@ -39,6 +45,49 @@ public struct PageContext<Destination> where Destination : kindaSwiftUI.RouterDe
 }
 extension SwiftUI.Color {
   public init(hex: Swift.String)
+}
+public struct AlertOptions {
+  public init(type: kindaSwiftUI.AlertType = .alert, title: Swift.String? = nil, message: Swift.String? = nil, actions: [kindaSwiftUI.AlertAction]? = nil)
+}
+public class AlertManager : Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($isAlertPresented) public var isAlertPresented: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  public var $isAlertPresented: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isConfirmationDialogPresented) public var isConfirmationDialogPresented: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  public var $isConfirmationDialogPresented: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($options) public var options: kindaSwiftUI.AlertOptions {
+    get
+    set
+    _modify
+  }
+  public var $options: Combine.Published<kindaSwiftUI.AlertOptions>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init()
+  public func present(options: kindaSwiftUI.AlertOptions)
+  public func present(_ type: kindaSwiftUI.AlertType, title: Swift.String? = nil, message: Swift.String? = nil, actions: [kindaSwiftUI.AlertAction]? = nil)
+  public func present(_ preset: kindaSwiftUI.AlertPreset, _ type: kindaSwiftUI.AlertType, message: Swift.String, actions: [kindaSwiftUI.AlertAction]? = nil)
+  public func present(_ error: any Swift.Error, actions: [kindaSwiftUI.AlertAction]? = nil)
+  public func hide()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
 }
 public struct KindaSwiftUIContentView<Content> : SwiftUI.View where Content : SwiftUI.View {
   public init(logLevel: kindaSwiftUI.KindaSwiftUILogLevel, logTypes: [kindaSwiftUI.KindaSwiftUILogType] = KindaSwiftUILogType.allCases, @SwiftUI.ViewBuilder content: @escaping () -> Content)
@@ -170,6 +219,39 @@ public protocol RouterDestination : Swift.Hashable, SwiftUI.View {
   var modalValue: kindaSwiftUI.ModalValue { get }
   init?(modalValue: kindaSwiftUI.ModalValue)
 }
+public enum AlertPreset {
+  case error, success, warning, info
+  public static func == (a: kindaSwiftUI.AlertPreset, b: kindaSwiftUI.AlertPreset) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum AlertActionLabel : Swift.String {
+  case ok
+  case cancel
+  case agree
+  case later
+  case remindMeLater
+  case skip
+  case dontAskAgain
+  case dismiss
+  case forward
+  case back
+  case previous
+  case next
+  case yes
+  case no
+  case confirm
+  case deny
+  case open
+  case close
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public enum KindaSwiftUILogType : Swift.String, Swift.CaseIterable {
   case developer
   case navigationRouter
@@ -206,6 +288,17 @@ public struct LicenseKeyCenter {
   @discardableResult
   public static func getLicenseKeyStatusResult() -> kindaSwiftUI.LicenseKeyStatusResult
 }
+@_Concurrency.MainActor(unsafe) public struct Screen<Content> : SwiftUI.View where Content : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var content: (kindaSwiftUI.ScreenContext) -> Content
+  @_Concurrency.MainActor(unsafe) public init(content: @escaping (kindaSwiftUI.ScreenContext) -> Content)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI6ScreenV4bodyQrvp", 0) __<Content>
+}
+public struct ScreenContext {
+  public var alertManager: kindaSwiftUI.AlertManager
+}
 public struct PoweredByKindaSwiftUIView : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
@@ -217,11 +310,26 @@ open class RouterModalDependencyLinker : Foundation.ObservableObject {
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
+public enum AlertType {
+  case alert, confirmationDialog
+  public static func == (a: kindaSwiftUI.AlertType, b: kindaSwiftUI.AlertType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension kindaSwiftUI.PopStyle : Swift.Equatable {}
 extension kindaSwiftUI.PopStyle : Swift.Hashable {}
 extension kindaSwiftUI.PopStyle : Swift.RawRepresentable {}
+extension kindaSwiftUI.AlertPreset : Swift.Equatable {}
+extension kindaSwiftUI.AlertPreset : Swift.Hashable {}
+extension kindaSwiftUI.AlertActionLabel : Swift.Equatable {}
+extension kindaSwiftUI.AlertActionLabel : Swift.Hashable {}
+extension kindaSwiftUI.AlertActionLabel : Swift.RawRepresentable {}
 extension kindaSwiftUI.KindaSwiftUILogType : Swift.Equatable {}
 extension kindaSwiftUI.KindaSwiftUILogType : Swift.Hashable {}
 extension kindaSwiftUI.KindaSwiftUILogType : Swift.RawRepresentable {}
 extension kindaSwiftUI.KindaSwiftUILogLevel : Swift.Equatable {}
 extension kindaSwiftUI.KindaSwiftUILogLevel : Swift.Hashable {}
+extension kindaSwiftUI.AlertType : Swift.Equatable {}
+extension kindaSwiftUI.AlertType : Swift.Hashable {}
