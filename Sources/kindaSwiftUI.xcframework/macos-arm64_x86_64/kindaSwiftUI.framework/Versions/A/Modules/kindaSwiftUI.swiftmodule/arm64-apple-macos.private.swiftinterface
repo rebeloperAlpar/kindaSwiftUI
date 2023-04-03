@@ -34,6 +34,8 @@ public struct AlertAction : Swift.Identifiable {
 }
 public struct PageContext<Destination> where Destination : kindaSwiftUI.RouterDestination {
   public var router: kindaSwiftUI.Router<Destination>
+  public var toastManager: kindaSwiftUI.ToastManager
+  public var alertManager: kindaSwiftUI.AlertManager
 }
 @_Concurrency.MainActor(unsafe) public struct KindaSwiftUI247ContentView<Content> : SwiftUI.View where Content : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public init(@SwiftUI.ViewBuilder content: @escaping () -> Content)

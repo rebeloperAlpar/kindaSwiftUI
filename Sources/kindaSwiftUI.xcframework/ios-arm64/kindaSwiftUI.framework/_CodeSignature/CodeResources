@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		GNPnvGboKRFIbVcDhZEN2MMN0pU=
+		6ESD2qTGnB0/5dMRxSFYs1n/xtY=
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		/633oqFB7zFXGG66SJObfX4thUU=
+		i6Edxn4zFDYFYgUBCOqc2ECB/J0=
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		/633oqFB7zFXGG66SJObfX4thUU=
+		i6Edxn4zFDYFYgUBCOqc2ECB/J0=
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Fgzxu9HFd3zVFc46W8IZfvyjdy0=
+		MkA3wuPrWn6fEqtKAw6tqZIS4Qg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NoItDdfXqikwKtHtFzxCdAn58joEBD+pLzKyaNP3tMk=
+			LjaxYXzjiLYFyFcC6oAMf+rNq0E4k54ST2u3yutQCPU=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V4am+nmXS2u5eX3xpGJdbiUflGKCsNL2gCN9EKAbIuA=
+			kb+srlNj7+FjWQKuixkAavxxM+qe8pvEIixNY+G7DAU=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V4am+nmXS2u5eX3xpGJdbiUflGKCsNL2gCN9EKAbIuA=
+			kb+srlNj7+FjWQKuixkAavxxM+qe8pvEIixNY+G7DAU=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KYdKmlX8+i6Y0mXoYCo1h1Dcy9QVWeH80cKZjGml5xw=
+			iKJKBpX04ymyiHg1zYvKYWQ6kgW2HJi4iyjcnR7h8iA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

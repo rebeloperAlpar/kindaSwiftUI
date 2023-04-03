@@ -34,6 +34,8 @@ public struct AlertAction : Swift.Identifiable {
 }
 public struct PageContext<Destination> where Destination : kindaSwiftUI.RouterDestination {
   public var router: kindaSwiftUI.Router<Destination>
+  public var toastManager: kindaSwiftUI.ToastManager
+  public var alertManager: kindaSwiftUI.AlertManager
 }
 public struct TabRoot<Destination, Tab> where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab {
   public init(_ root: Destination, tab: Tab)

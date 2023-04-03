@@ -919,8 +919,46 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_1"
+                "name": "ModifiedContent",
+                "printedName": "SwiftUI.ModifiedContent<some SwiftUI.View, SwiftUI._EnvironmentKeyWritingModifier<kindaSwiftUI.AlertManager?>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_EnvironmentKeyWritingModifier",
+                    "printedName": "SwiftUI._EnvironmentKeyWritingModifier<kindaSwiftUI.AlertManager?>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "kindaSwiftUI.AlertManager?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AlertManager",
+                            "printedName": "kindaSwiftUI.AlertManager",
+                            "usr": "s:12kindaSwiftUI12AlertManagerC"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI30_EnvironmentKeyWritingModifierV"
+                  }
+                ],
+                "usr": "s:7SwiftUI15ModifiedContentV"
               }
             ],
             "declKind": "Var",
@@ -939,8 +977,46 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_1"
+                    "name": "ModifiedContent",
+                    "printedName": "SwiftUI.ModifiedContent<some SwiftUI.View, SwiftUI._EnvironmentKeyWritingModifier<kindaSwiftUI.AlertManager?>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpaqueTypeArchetype",
+                        "printedName": "some SwiftUI.View",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "View",
+                            "printedName": "SwiftUI.View",
+                            "usr": "s:7SwiftUI4ViewP"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_EnvironmentKeyWritingModifier",
+                        "printedName": "SwiftUI._EnvironmentKeyWritingModifier<kindaSwiftUI.AlertManager?>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "kindaSwiftUI.AlertManager?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AlertManager",
+                                "printedName": "kindaSwiftUI.AlertManager",
+                                "usr": "s:12kindaSwiftUI12AlertManagerC"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI30_EnvironmentKeyWritingModifierV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI15ModifiedContentV"
                   }
                 ],
                 "declKind": "Accessor",
@@ -977,8 +1053,46 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_1"
+                    "name": "ModifiedContent",
+                    "printedName": "SwiftUI.ModifiedContent<some SwiftUI.View, SwiftUI._EnvironmentKeyWritingModifier<kindaSwiftUI.AlertManager?>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpaqueTypeArchetype",
+                        "printedName": "some SwiftUI.View",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "View",
+                            "printedName": "SwiftUI.View",
+                            "usr": "s:7SwiftUI4ViewP"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_EnvironmentKeyWritingModifier",
+                        "printedName": "SwiftUI._EnvironmentKeyWritingModifier<kindaSwiftUI.AlertManager?>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "kindaSwiftUI.AlertManager?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AlertManager",
+                                "printedName": "kindaSwiftUI.AlertManager",
+                                "usr": "s:12kindaSwiftUI12AlertManagerC"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI30_EnvironmentKeyWritingModifierV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI15ModifiedContentV"
                   }
                 ]
               }
@@ -1097,6 +1211,188 @@
                 "declKind": "Accessor",
                 "usr": "s:12kindaSwiftUI11PageContextV6routerAA6RouterCyxGvM",
                 "mangledName": "$s12kindaSwiftUI11PageContextV6routerAA6RouterCyxGvM",
+                "moduleName": "kindaSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : kindaSwiftUI.RouterDestination>",
+                "sugared_genericSig": "<Destination where Destination : kindaSwiftUI.RouterDestination>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toastManager",
+            "printedName": "toastManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ToastManager",
+                "printedName": "kindaSwiftUI.ToastManager",
+                "usr": "s:12kindaSwiftUI12ToastManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12kindaSwiftUI11PageContextV12toastManagerAA05ToastG0Cvp",
+            "mangledName": "$s12kindaSwiftUI11PageContextV12toastManagerAA05ToastG0Cvp",
+            "moduleName": "kindaSwiftUI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ToastManager",
+                    "printedName": "kindaSwiftUI.ToastManager",
+                    "usr": "s:12kindaSwiftUI12ToastManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI11PageContextV12toastManagerAA05ToastG0Cvg",
+                "mangledName": "$s12kindaSwiftUI11PageContextV12toastManagerAA05ToastG0Cvg",
+                "moduleName": "kindaSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : kindaSwiftUI.RouterDestination>",
+                "sugared_genericSig": "<Destination where Destination : kindaSwiftUI.RouterDestination>",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ToastManager",
+                    "printedName": "kindaSwiftUI.ToastManager",
+                    "usr": "s:12kindaSwiftUI12ToastManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI11PageContextV12toastManagerAA05ToastG0Cvs",
+                "mangledName": "$s12kindaSwiftUI11PageContextV12toastManagerAA05ToastG0Cvs",
+                "moduleName": "kindaSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : kindaSwiftUI.RouterDestination>",
+                "sugared_genericSig": "<Destination where Destination : kindaSwiftUI.RouterDestination>",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI11PageContextV12toastManagerAA05ToastG0CvM",
+                "mangledName": "$s12kindaSwiftUI11PageContextV12toastManagerAA05ToastG0CvM",
+                "moduleName": "kindaSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : kindaSwiftUI.RouterDestination>",
+                "sugared_genericSig": "<Destination where Destination : kindaSwiftUI.RouterDestination>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "alertManager",
+            "printedName": "alertManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AlertManager",
+                "printedName": "kindaSwiftUI.AlertManager",
+                "usr": "s:12kindaSwiftUI12AlertManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12kindaSwiftUI11PageContextV12alertManagerAA05AlertG0Cvp",
+            "mangledName": "$s12kindaSwiftUI11PageContextV12alertManagerAA05AlertG0Cvp",
+            "moduleName": "kindaSwiftUI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlertManager",
+                    "printedName": "kindaSwiftUI.AlertManager",
+                    "usr": "s:12kindaSwiftUI12AlertManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI11PageContextV12alertManagerAA05AlertG0Cvg",
+                "mangledName": "$s12kindaSwiftUI11PageContextV12alertManagerAA05AlertG0Cvg",
+                "moduleName": "kindaSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : kindaSwiftUI.RouterDestination>",
+                "sugared_genericSig": "<Destination where Destination : kindaSwiftUI.RouterDestination>",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlertManager",
+                    "printedName": "kindaSwiftUI.AlertManager",
+                    "usr": "s:12kindaSwiftUI12AlertManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI11PageContextV12alertManagerAA05AlertG0Cvs",
+                "mangledName": "$s12kindaSwiftUI11PageContextV12alertManagerAA05AlertG0Cvs",
+                "moduleName": "kindaSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : kindaSwiftUI.RouterDestination>",
+                "sugared_genericSig": "<Destination where Destination : kindaSwiftUI.RouterDestination>",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI11PageContextV12alertManagerAA05AlertG0CvM",
+                "mangledName": "$s12kindaSwiftUI11PageContextV12alertManagerAA05AlertG0CvM",
                 "moduleName": "kindaSwiftUI",
                 "genericSig": "<τ_0_0 where τ_0_0 : kindaSwiftUI.RouterDestination>",
                 "sugared_genericSig": "<Destination where Destination : kindaSwiftUI.RouterDestination>",
@@ -27321,6 +27617,20 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/PageAndScreen\/Page.swift",
+      "kind": "StringLiteral",
+      "offset": 2194,
+      "length": 7,
+      "value": "\"Alert\""
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/PageAndScreen\/Page.swift",
+      "kind": "StringLiteral",
+      "offset": 2429,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/License\/KindaSwiftUI247ContentView.swift",
       "kind": "BooleanLiteral",
       "offset": 390,
@@ -29353,70 +29663,70 @@
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Toast\/Toast.swift",
       "kind": "BooleanLiteral",
-      "offset": 25430,
+      "offset": 25495,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Toast\/Toast.swift",
       "kind": "StringLiteral",
-      "offset": 27089,
+      "offset": 27154,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Toast\/Toast.swift",
       "kind": "StringLiteral",
-      "offset": 27188,
+      "offset": 27253,
       "length": 9,
       "value": "\"Working\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Toast\/Toast.swift",
       "kind": "StringLiteral",
-      "offset": 27271,
+      "offset": 27336,
       "length": 7,
       "value": "\"Error\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Toast\/Toast.swift",
       "kind": "StringLiteral",
-      "offset": 27358,
+      "offset": 27423,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Toast\/Toast.swift",
       "kind": "StringLiteral",
-      "offset": 27423,
+      "offset": 27488,
       "length": 31,
       "value": "\"exclamationmark.triangle.fill\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Toast\/Toast.swift",
       "kind": "StringLiteral",
-      "offset": 27485,
+      "offset": 27550,
       "length": 9,
       "value": "\"Warning\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Toast\/Toast.swift",
       "kind": "StringLiteral",
-      "offset": 27547,
+      "offset": 27612,
       "length": 18,
       "value": "\"info.circle.fill\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Toast\/Toast.swift",
       "kind": "StringLiteral",
-      "offset": 27601,
+      "offset": 27666,
       "length": 6,
       "value": "\"Info\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Toast\/Toast.swift",
       "kind": "BooleanLiteral",
-      "offset": 30061,
+      "offset": 30126,
       "length": 5,
       "value": "false"
     },
@@ -29974,14 +30284,14 @@
       "value": "\"􁃘 😳 You have an inactive license key. The trial is full-featured and there's no expiry date, but without a subscription kindaSwiftUI sleeps from time to time. You may consider subscribing for 'SwiftUI Nation' to keep kindaSwiftUI awake 24\/7. Visit https:\/\/store.rebeloper.com\/community\""
     },
     {
-      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Page\/Screen.swift",
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/PageAndScreen\/Screen.swift",
       "kind": "StringLiteral",
       "offset": 1836,
       "length": 7,
       "value": "\"Alert\""
     },
     {
-      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Page\/Screen.swift",
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/PageAndScreen\/Screen.swift",
       "kind": "StringLiteral",
       "offset": 2071,
       "length": 2,
