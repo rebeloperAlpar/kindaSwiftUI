@@ -375,9 +375,7 @@ public struct PresentationOptions {
   public var cornerRadius: CoreFoundation.CGFloat?
   public var compactAdaptation: kindaSwiftUI.PresentationCompactAdaptation
   public var contentInteraction: SwiftUI.PresentationContentInteraction
-  public var backgroundInteraction: SwiftUI.PresentationBackgroundInteraction
-  public var backgroundView: (() -> SwiftUI.AnyView)?
-  public init(detents: Swift.Set<SwiftUI.PresentationDetent> = [], dragIndicatorVisibility: SwiftUI.Visibility = .automatic, cornerRadius: CoreFoundation.CGFloat? = nil, compactAdaptation: kindaSwiftUI.PresentationCompactAdaptation = .init(horizontal: .automatic, vertical: .automatic), contentInteraction: SwiftUI.PresentationContentInteraction = .automatic, backgroundInteraction: SwiftUI.PresentationBackgroundInteraction = .automatic, backgroundView: (() -> SwiftUI.AnyView)? = nil)
+  public init(detents: Swift.Set<SwiftUI.PresentationDetent> = [], dragIndicatorVisibility: SwiftUI.Visibility = .automatic, cornerRadius: CoreFoundation.CGFloat? = nil, compactAdaptation: kindaSwiftUI.PresentationCompactAdaptation = .init(horizontal: .automatic, vertical: .automatic), contentInteraction: SwiftUI.PresentationContentInteraction = .automatic)
 }
 public protocol RouterDestination : Swift.Hashable, SwiftUI.View {
   var modalValue: kindaSwiftUI.ModalValue { get }

@@ -8481,240 +8481,9 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "backgroundInteraction",
-            "printedName": "backgroundInteraction",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PresentationBackgroundInteraction",
-                "printedName": "SwiftUI.PresentationBackgroundInteraction",
-                "usr": "s:7SwiftUI33PresentationBackgroundInteractionV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12kindaSwiftUI19PresentationOptionsV21backgroundInteraction0bC00d10BackgroundG0Vvp",
-            "mangledName": "$s12kindaSwiftUI19PresentationOptionsV21backgroundInteraction0bC00d10BackgroundG0Vvp",
-            "moduleName": "kindaSwiftUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PresentationBackgroundInteraction",
-                    "printedName": "SwiftUI.PresentationBackgroundInteraction",
-                    "usr": "s:7SwiftUI33PresentationBackgroundInteractionV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI19PresentationOptionsV21backgroundInteraction0bC00d10BackgroundG0Vvg",
-                "mangledName": "$s12kindaSwiftUI19PresentationOptionsV21backgroundInteraction0bC00d10BackgroundG0Vvg",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PresentationBackgroundInteraction",
-                    "printedName": "SwiftUI.PresentationBackgroundInteraction",
-                    "usr": "s:7SwiftUI33PresentationBackgroundInteractionV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI19PresentationOptionsV21backgroundInteraction0bC00d10BackgroundG0Vvs",
-                "mangledName": "$s12kindaSwiftUI19PresentationOptionsV21backgroundInteraction0bC00d10BackgroundG0Vvs",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI19PresentationOptionsV21backgroundInteraction0bC00d10BackgroundG0VvM",
-                "mangledName": "$s12kindaSwiftUI19PresentationOptionsV21backgroundInteraction0bC00d10BackgroundG0VvM",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "backgroundView",
-            "printedName": "backgroundView",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> SwiftUI.AnyView)?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> SwiftUI.AnyView",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AnyView",
-                        "printedName": "SwiftUI.AnyView",
-                        "usr": "s:7SwiftUI7AnyViewV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12kindaSwiftUI19PresentationOptionsV14backgroundView0bC003AnyG0VycSgvp",
-            "mangledName": "$s12kindaSwiftUI19PresentationOptionsV14backgroundView0bC003AnyG0VycSgvp",
-            "moduleName": "kindaSwiftUI",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> SwiftUI.AnyView)?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> SwiftUI.AnyView",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "AnyView",
-                            "printedName": "SwiftUI.AnyView",
-                            "usr": "s:7SwiftUI7AnyViewV"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI19PresentationOptionsV14backgroundView0bC003AnyG0VycSgvg",
-                "mangledName": "$s12kindaSwiftUI19PresentationOptionsV14backgroundView0bC003AnyG0VycSgvg",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> SwiftUI.AnyView)?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> SwiftUI.AnyView",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "AnyView",
-                            "printedName": "SwiftUI.AnyView",
-                            "usr": "s:7SwiftUI7AnyViewV"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI19PresentationOptionsV14backgroundView0bC003AnyG0VycSgvs",
-                "mangledName": "$s12kindaSwiftUI19PresentationOptionsV14backgroundView0bC003AnyG0VycSgvs",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12kindaSwiftUI19PresentationOptionsV14backgroundView0bC003AnyG0VycSgvM",
-                "mangledName": "$s12kindaSwiftUI19PresentationOptionsV14backgroundView0bC003AnyG0VycSgvM",
-                "moduleName": "kindaSwiftUI",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(detents:dragIndicatorVisibility:cornerRadius:compactAdaptation:contentInteraction:backgroundInteraction:backgroundView:)",
+            "printedName": "init(detents:dragIndicatorVisibility:cornerRadius:compactAdaptation:contentInteraction:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8772,45 +8541,11 @@
                 "printedName": "SwiftUI.PresentationContentInteraction",
                 "hasDefaultArg": true,
                 "usr": "s:7SwiftUI30PresentationContentInteractionV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PresentationBackgroundInteraction",
-                "printedName": "SwiftUI.PresentationBackgroundInteraction",
-                "hasDefaultArg": true,
-                "usr": "s:7SwiftUI33PresentationBackgroundInteractionV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> SwiftUI.AnyView)?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> SwiftUI.AnyView",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AnyView",
-                        "printedName": "SwiftUI.AnyView",
-                        "usr": "s:7SwiftUI7AnyViewV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12kindaSwiftUI19PresentationOptionsV7detents23dragIndicatorVisibility12cornerRadius17compactAdaptation18contentInteraction010backgroundO00P4ViewACShy0bC00D6DetentVG_AK0I0O14CoreFoundation7CGFloatVSgAA0d7CompactM0VAK0d7ContentO0VAK0d10BackgroundO0VAK03AnyQ0VycSgtcfc",
-            "mangledName": "$s12kindaSwiftUI19PresentationOptionsV7detents23dragIndicatorVisibility12cornerRadius17compactAdaptation18contentInteraction010backgroundO00P4ViewACShy0bC00D6DetentVG_AK0I0O12CoreGraphics7CGFloatVSgAA0d7CompactM0VAK0d7ContentO0VAK0d10BackgroundO0VAK03AnyQ0VycSgtcfc",
+            "usr": "s:12kindaSwiftUI19PresentationOptionsV7detents23dragIndicatorVisibility12cornerRadius17compactAdaptation18contentInteractionACShy0bC00D6DetentVG_AI0I0O14CoreFoundation7CGFloatVSgAA0d7CompactM0VAI0d7ContentO0Vtcfc",
+            "mangledName": "$s12kindaSwiftUI19PresentationOptionsV7detents23dragIndicatorVisibility12cornerRadius17compactAdaptation18contentInteractionACShy0bC00D6DetentVG_AI0I0O12CoreGraphics7CGFloatVSgAA0d7CompactM0VAI0d7ContentO0Vtcfc",
             "moduleName": "kindaSwiftUI",
             "declAttributes": [
               "AccessControl"
@@ -15027,21 +14762,21 @@
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/RouterStack\/RootNavigationStack.swift",
       "kind": "StringLiteral",
-      "offset": 1945,
+      "offset": 1614,
       "length": 62,
       "value": "\"Set path index \""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/RouterStack\/RootNavigationStack.swift",
       "kind": "StringLiteral",
-      "offset": 1980,
+      "offset": 1649,
       "length": 3,
       "value": "\" for tab index \""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/RouterStack\/RootNavigationStack.swift",
       "kind": "StringLiteral",
-      "offset": 2006,
+      "offset": 1675,
       "length": 2,
       "value": "\"\""
     },
@@ -16210,7 +15945,7 @@
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/NavigationRouter\/Modals\/PresentationOptions.swift",
       "kind": "Array",
-      "offset": 598,
+      "offset": 472,
       "length": 2,
       "value": "[]"
     },
