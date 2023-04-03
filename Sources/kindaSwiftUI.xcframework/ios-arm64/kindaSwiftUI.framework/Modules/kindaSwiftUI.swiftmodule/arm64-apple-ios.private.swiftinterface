@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios16.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name kindaSwiftUI
+// swift-module-flags: -target arm64-apple-ios16.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name kindaSwiftUI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
 import Foundation
@@ -123,6 +123,10 @@ public struct KindaSwiftUIContentView<Content> : SwiftUI.View where Content : Sw
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI11RouterStackV4bodyQrvp", 0) __<Destination>
+}
+extension SwiftUI.View {
+  public func `if`<Content>(_ condition: @autoclosure () -> Swift.Bool, transform: (Self) -> Content) -> some SwiftUI.View where Content : SwiftUI.View
+  
 }
 public class Router<Destination> : Combine.ObservableObject where Destination : kindaSwiftUI.RouterDestination {
   @Combine.Published @_projectedValueProperty($modalsState) public var modalsState: [Swift.Array<Swift.Bool>] {
@@ -357,8 +361,21 @@ public struct ToastOptions {
   public init(displayMode: kindaSwiftUI.ToastDisplayMode? = nil, type: kindaSwiftUI.ToastType? = nil, title: Swift.String? = nil, message: Swift.String? = nil, style: kindaSwiftUI.ToastStyle? = nil)
 }
 extension SwiftUI.View {
-  public func sheet<Destination>(for modal: Destination, presentationDetents: Swift.Set<SwiftUI.PresentationDetent> = [], presentationDragIndicatorVisibility: SwiftUI.Visibility = .automatic, onDismiss: (() -> Swift.Void)? = nil) -> some SwiftUI.View where Destination : kindaSwiftUI.RouterDestination
+  public func sheet<Destination>(for modal: Destination, options: kindaSwiftUI.PresentationOptions, onDismiss: (() -> Swift.Void)? = nil) -> some SwiftUI.View where Destination : kindaSwiftUI.RouterDestination
   
+}
+public struct PresentationOptions {
+  public var detents: Swift.Set<SwiftUI.PresentationDetent>
+  public var dragIndicatorVisibility: SwiftUI.Visibility
+  public var cornerRadius: CoreFoundation.CGFloat?
+  public var compactAdaptation: kindaSwiftUI.PresentationCompactAdaptation
+  public var contentInteraction: SwiftUI.PresentationContentInteraction
+  public var backgroundInteraction: SwiftUI.PresentationBackgroundInteraction
+  public var backgroundView: (() -> SwiftUI.AnyView)?
+}
+public struct PresentationCompactAdaptation {
+  public var horizontal: SwiftUI.PresentationAdaptation
+  public var vertical: SwiftUI.PresentationAdaptation
 }
 public protocol RouterDestination : Swift.Hashable, SwiftUI.View {
   var modalValue: kindaSwiftUI.ModalValue { get }
