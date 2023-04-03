@@ -3,7 +3,6 @@
 // swift-module-flags: -target x86_64-apple-ios16.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name kindaSwiftUI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
-import Combine/*.Combine*/
 import Foundation
 import Swift
 import SwiftUI
@@ -59,7 +58,7 @@ public struct AlertOptions {
 public struct CustomTabRoot<Destination, Tab, UnselectedTab> where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab {
   public init(_ root: Destination, tab: Tab, unselectedTab: UnselectedTab)
 }
-public class AlertManager : Foundation.ObservableObject {
+public class AlertManager : Combine.ObservableObject {
   @Combine.Published @_projectedValueProperty($isAlertPresented) public var isAlertPresented: Swift.Bool {
     get
     set
@@ -233,6 +232,128 @@ public enum PopStyle : Swift.String {
     get
   }
 }
+public struct Toast : SwiftUI.View {
+  public var displayMode: kindaSwiftUI.ToastDisplayMode
+  public var type: kindaSwiftUI.ToastType
+  public var title: Swift.String?
+  public var message: Swift.String?
+  public var style: kindaSwiftUI.ToastStyle?
+  public init(displayMode: kindaSwiftUI.ToastDisplayMode = .alert, type: kindaSwiftUI.ToastType, title: Swift.String? = nil, message: Swift.String? = nil, style: kindaSwiftUI.ToastStyle? = nil)
+  public init(displayMode: kindaSwiftUI.ToastDisplayMode, type: kindaSwiftUI.ToastType, title: Swift.String? = nil)
+  public var banner: some SwiftUI.View {
+    get
+  }
+  public var hud: some SwiftUI.View {
+    get
+  }
+  public var alert: some SwiftUI.View {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI5ToastV4bodyQrvp", 0) __
+}
+public struct ToastModifier : SwiftUI.ViewModifier {
+  public func main() -> some SwiftUI.View
+  
+  @_Concurrency.MainActor(unsafe) public func body(content: kindaSwiftUI.ToastModifier.Content) -> some SwiftUI.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI13ToastModifierV4body7contentQr0bC005_ViewE8_ContentVyACG_tF", 0) __
+}
+extension SwiftUI.View {
+  public func toast(isPresented: SwiftUI.Binding<Swift.Bool>, duration: Swift.Double = 2, tapToDismiss: Swift.Bool = true, offsetY: CoreFoundation.CGFloat = 0, toast: @escaping () -> kindaSwiftUI.Toast, onTap: (() -> ())? = nil, completion: (() -> ())? = nil) -> some SwiftUI.View
+  
+}
+public enum ToastBannerAnimation {
+  case slide, pop
+  public static func == (a: kindaSwiftUI.ToastBannerAnimation, b: kindaSwiftUI.ToastBannerAnimation) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ToastPreset {
+  case progress, error, success, warning, info
+  public static func == (a: kindaSwiftUI.ToastPreset, b: kindaSwiftUI.ToastPreset) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ToastDisplayMode : Swift.Equatable {
+  case alert
+  case hud
+  case banner(_: kindaSwiftUI.ToastBannerAnimation)
+  public static func == (a: kindaSwiftUI.ToastDisplayMode, b: kindaSwiftUI.ToastDisplayMode) -> Swift.Bool
+}
+public enum ToastType : Swift.Equatable {
+  case success(_: SwiftUI.Color)
+  case error(_: SwiftUI.Color)
+  case systemImage(_: Swift.String, _: SwiftUI.Color)
+  case image(_: Swift.String, _: SwiftUI.Color)
+  case loading
+  case regular
+  public static func == (a: kindaSwiftUI.ToastType, b: kindaSwiftUI.ToastType) -> Swift.Bool
+}
+public enum BackgroundMaterial {
+  case regularMaterial
+  case thickMaterial
+  case thinMaterial
+  case ultraThinMaterial
+  case ultraThickMaterial
+  public static func == (a: kindaSwiftUI.BackgroundMaterial, b: kindaSwiftUI.BackgroundMaterial) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ToastStyle : Swift.Equatable {
+  case style(backgroundMaterial: kindaSwiftUI.BackgroundMaterial? = .ultraThinMaterial, backgroundColor: SwiftUI.Color? = nil, titleColor: SwiftUI.Color? = nil, messageColor: SwiftUI.Color? = nil, titleFont: SwiftUI.Font? = nil, messageFont: SwiftUI.Font? = nil, imageMaxLength: CoreFoundation.CGFloat? = 20, systemImageFont: SwiftUI.Font? = nil, cornerRadius: CoreFoundation.CGFloat? = nil)
+  public static func == (a: kindaSwiftUI.ToastStyle, b: kindaSwiftUI.ToastStyle) -> Swift.Bool
+}
+public class ToastManager : Combine.ObservableObject {
+  @Combine.Published @_projectedValueProperty($isPresented) public var isPresented: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  public var $isPresented: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($options) public var options: kindaSwiftUI.ToastOptions {
+    get
+    set
+    _modify
+  }
+  public var $options: Combine.Published<kindaSwiftUI.ToastOptions>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init()
+  @_Concurrency.MainActor public func present(_ displayMode: kindaSwiftUI.ToastDisplayMode, type: kindaSwiftUI.ToastType = .regular, title: Swift.String? = nil, message: Swift.String? = nil, style: kindaSwiftUI.ToastStyle? = nil)
+  @_Concurrency.MainActor public func present(_ displayMode: kindaSwiftUI.ToastDisplayMode, type: kindaSwiftUI.ToastType = .regular, title: Swift.String? = nil, message: Swift.String? = nil, backgroundMaterial: kindaSwiftUI.BackgroundMaterial? = nil, backgroundColor: SwiftUI.Color? = nil, titleColor: SwiftUI.Color? = nil, messageColor: SwiftUI.Color? = nil, titleFont: SwiftUI.Font? = nil, messageFont: SwiftUI.Font? = nil, imageMaxLength: CoreFoundation.CGFloat? = 20, systemImageFont: SwiftUI.Font? = nil, cornerRadius: CoreFoundation.CGFloat? = nil)
+  @_Concurrency.MainActor public func present(options: kindaSwiftUI.ToastOptions)
+  @_Concurrency.MainActor public func present(_ displayMode: kindaSwiftUI.ToastDisplayMode, type: kindaSwiftUI.ToastType = .regular, title: Swift.String, message: Swift.String, style: kindaSwiftUI.ToastStyle? = nil)
+  @_Concurrency.MainActor public func present(_ displayMode: kindaSwiftUI.ToastDisplayMode, type: kindaSwiftUI.ToastType = .regular, title: Swift.String, message: Swift.String? = nil, style: kindaSwiftUI.ToastStyle? = nil)
+  @_Concurrency.MainActor public func present(_ displayMode: kindaSwiftUI.ToastDisplayMode, type: kindaSwiftUI.ToastType = .regular, title: Swift.String? = nil, message: Swift.String, style: kindaSwiftUI.ToastStyle? = nil)
+  @_Concurrency.MainActor public func present(_ preset: kindaSwiftUI.ToastPreset, _ displayMode: kindaSwiftUI.ToastDisplayMode, message: Swift.String, style: kindaSwiftUI.ToastStyle? = nil)
+  @_Concurrency.MainActor public func present(_ displayMode: kindaSwiftUI.ToastDisplayMode, title: Swift.String, message: Swift.String, style: kindaSwiftUI.ToastStyle? = nil)
+  @_Concurrency.MainActor public func present(_ displayMode: kindaSwiftUI.ToastDisplayMode, title: Swift.String, style: kindaSwiftUI.ToastStyle? = nil)
+  @_Concurrency.MainActor public func present(_ displayMode: kindaSwiftUI.ToastDisplayMode, message: Swift.String, style: kindaSwiftUI.ToastStyle? = nil)
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func present(_ displayMode: kindaSwiftUI.ToastDisplayMode = .hud, type: kindaSwiftUI.ToastType = .loading, title: Swift.String? = nil, message: Swift.String? = nil, style: kindaSwiftUI.ToastStyle? = nil, alertManager: kindaSwiftUI.AlertManager? = nil, action: @escaping () async throws -> ()) async throws
+  #endif
+  @_Concurrency.MainActor public func hide()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public struct ToastOptions {
+  public init(displayMode: kindaSwiftUI.ToastDisplayMode? = nil, type: kindaSwiftUI.ToastType? = nil, title: Swift.String? = nil, message: Swift.String? = nil, style: kindaSwiftUI.ToastStyle? = nil)
+}
 extension SwiftUI.View {
   public func sheet<Destination>(for modal: Destination, presentationDetents: Swift.Set<SwiftUI.PresentationDetent> = [], presentationDragIndicatorVisibility: SwiftUI.Visibility = .automatic, onDismiss: (() -> Swift.Void)? = nil) -> some SwiftUI.View where Destination : kindaSwiftUI.RouterDestination
   
@@ -323,6 +444,7 @@ public struct LicenseKeyCenter {
   public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI6ScreenV4bodyQrvp", 0) __<Content>
 }
 public struct ScreenContext {
+  public var toastManager: kindaSwiftUI.ToastManager
   public var alertManager: kindaSwiftUI.AlertManager
 }
 public struct PoweredByKindaSwiftUIView : SwiftUI.View {
@@ -339,7 +461,7 @@ public struct PoweredByKindaSwiftUIView : SwiftUI.View {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI14TabRouterStackV4bodyQrvp", 0) __<Destination, Tab>
 }
-open class RouterModalDependencyLinker : Foundation.ObservableObject {
+open class RouterModalDependencyLinker : Combine.ObservableObject {
   public init()
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
@@ -355,6 +477,12 @@ public enum AlertType {
 extension kindaSwiftUI.PopStyle : Swift.Equatable {}
 extension kindaSwiftUI.PopStyle : Swift.Hashable {}
 extension kindaSwiftUI.PopStyle : Swift.RawRepresentable {}
+extension kindaSwiftUI.ToastBannerAnimation : Swift.Equatable {}
+extension kindaSwiftUI.ToastBannerAnimation : Swift.Hashable {}
+extension kindaSwiftUI.ToastPreset : Swift.Equatable {}
+extension kindaSwiftUI.ToastPreset : Swift.Hashable {}
+extension kindaSwiftUI.BackgroundMaterial : Swift.Equatable {}
+extension kindaSwiftUI.BackgroundMaterial : Swift.Hashable {}
 extension kindaSwiftUI.AlertPreset : Swift.Equatable {}
 extension kindaSwiftUI.AlertPreset : Swift.Hashable {}
 extension kindaSwiftUI.AlertActionLabel : Swift.Equatable {}

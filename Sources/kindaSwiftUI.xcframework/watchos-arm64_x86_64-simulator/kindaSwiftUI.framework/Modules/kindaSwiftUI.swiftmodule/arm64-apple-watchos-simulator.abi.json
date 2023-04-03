@@ -1830,6 +1830,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "kindaSwiftUI"
+      },
+      {
         "kind": "TypeDecl",
         "name": "AlertManager",
         "printedName": "AlertManager",
@@ -7537,6 +7544,13 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "kindaSwiftUI"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -12692,6 +12706,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "kindaSwiftUI"
+      },
+      {
         "kind": "TypeDecl",
         "name": "RouterModalDependencyLinker",
         "printedName": "RouterModalDependencyLinker",
@@ -13350,77 +13371,77 @@
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 203,
+      "offset": 218,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 273,
+      "offset": 288,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertManager.swift",
       "kind": "StringLiteral",
-      "offset": 757,
+      "offset": 772,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1235,
+      "offset": 1250,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1326,
+      "offset": 1341,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertManager.swift",
       "kind": "StringLiteral",
-      "offset": 1873,
+      "offset": 1888,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertManager.swift",
       "kind": "StringLiteral",
-      "offset": 1941,
+      "offset": 1956,
       "length": 7,
       "value": "\"Error\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertManager.swift",
       "kind": "StringLiteral",
-      "offset": 1992,
+      "offset": 2007,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertManager.swift",
       "kind": "StringLiteral",
-      "offset": 2045,
+      "offset": 2060,
       "length": 9,
       "value": "\"Warning\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertManager.swift",
       "kind": "StringLiteral",
-      "offset": 2095,
+      "offset": 2110,
       "length": 6,
       "value": "\"Info\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Alert\/AlertManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2525,
+      "offset": 2540,
       "length": 5,
       "value": "false"
     },
@@ -14799,28 +14820,28 @@
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/License\/LicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 419,
+      "offset": 434,
       "length": 19,
       "value": "\"KindaSwiftUI-Info\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/License\/LicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 448,
+      "offset": 463,
       "length": 7,
       "value": "\"plist\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/License\/LicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 929,
+      "offset": 944,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/License\/LicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 1290,
       "length": 7,
       "value": "\"trial\""
     },
@@ -15324,14 +15345,14 @@
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Page\/Screen.swift",
       "kind": "StringLiteral",
-      "offset": 1161,
+      "offset": 1836,
       "length": 7,
       "value": "\"Alert\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Page\/Screen.swift",
       "kind": "StringLiteral",
-      "offset": 1396,
+      "offset": 2071,
       "length": 2,
       "value": "\"\""
     },

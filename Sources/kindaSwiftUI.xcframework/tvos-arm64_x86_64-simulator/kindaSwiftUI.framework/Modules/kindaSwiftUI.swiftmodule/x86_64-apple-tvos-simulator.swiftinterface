@@ -3,7 +3,6 @@
 // swift-module-flags: -target x86_64-apple-tvos16.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name kindaSwiftUI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
-import Combine/*.Combine*/
 import Foundation
 import Swift
 import SwiftUI
@@ -49,7 +48,7 @@ extension SwiftUI.Color {
 public struct AlertOptions {
   public init(type: kindaSwiftUI.AlertType = .alert, title: Swift.String? = nil, message: Swift.String? = nil, actions: [kindaSwiftUI.AlertAction]? = nil)
 }
-public class AlertManager : Foundation.ObservableObject {
+public class AlertManager : Combine.ObservableObject {
   @Combine.Published @_projectedValueProperty($isAlertPresented) public var isAlertPresented: Swift.Bool {
     get
     set
@@ -305,7 +304,7 @@ public struct PoweredByKindaSwiftUIView : SwiftUI.View {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI014PoweredByKindaB6UIViewV4bodyQrvp", 0) __
 }
-open class RouterModalDependencyLinker : Foundation.ObservableObject {
+open class RouterModalDependencyLinker : Combine.ObservableObject {
   public init()
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
