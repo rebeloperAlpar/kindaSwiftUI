@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		cl7vDEUvCH6pnVzW0dhug1X3Hzw=
+		izxVhoIhQUyraBkRkUj+V7Zvxt0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -29,7 +29,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cco60fPGn2VOqQx6bGWIjIawh3X5AfV/sZmWYn8hLXg=
+			MqvY+YDEV6cSOT7DI3ZtxnrHrhCxpJnZ+FsmaP1GrLo=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
@@ -57,14 +57,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fRFYWl0Wt0gwaUVTLGZv7ZEIBt3foSzmRkuqTv2Fojg=
+			KehW2BB1FNIZOKofsxIyqLrqDe5h93MgzUI1+dPGN3Y=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cco60fPGn2VOqQx6bGWIjIawh3X5AfV/sZmWYn8hLXg=
+			MqvY+YDEV6cSOT7DI3ZtxnrHrhCxpJnZ+FsmaP1GrLo=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a6KMdxb5Xi2Qo7LiBMAiyAb2uTOA0cmhR1xuRxDSuwQ=
+			RG55vyp5u6Y1iqgWC4h8dJ7LL2OFeO3QNmjYb0cUtgU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N/Kv0fReAjRK8HZWO7Y7wBOxrAt+HLbz+g9U4uGN5Ts=
+			1wxXclk8alVQZH9AlzCUCZC7VipBiwoV9j5QBKL7Lmg=
 			</data>
 		</dict>
 	</dict>

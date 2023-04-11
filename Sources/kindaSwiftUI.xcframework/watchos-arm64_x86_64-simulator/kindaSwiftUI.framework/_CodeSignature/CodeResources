@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cbALeNWBSd7WLryClOBafDY91s0=
+		eOUIyEqnkBMgbRedYrAy3ZA+tLg=
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		WEGHFfI7PiAM+/mTommDb1qtuIY=
+		RPoilX67YdjSUNU3yKT2dDWZLHM=
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		O+I9KWRnpXFqh44xRBZaGkhhERg=
+		NYEX89sm8u8EZIXiDNELEQc7ZFo=
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		WEGHFfI7PiAM+/mTommDb1qtuIY=
+		RPoilX67YdjSUNU3yKT2dDWZLHM=
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		pNXk8phoY9MCMqc6hxbTYy+fScQ=
+		IKFZtyzqZYk0957rG5r+SGAMDpU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vK4+rz2vYiQZRcPe7QfS5DNh87lfXeCRaAIZkGqSUDc=
+			1T19JX74P6zJP/mnyv3Nwb3u3M3Cc0pXQoZJJUML7As=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ukIN6b6LjhWIkF9JuZ2Vfcp352AnvCjSffgWjpXA6qU=
+			Xz74IhajMQeiAsshL1WcwZvUDyrZL9X2Ex4aV8S+TE8=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vK4+rz2vYiQZRcPe7QfS5DNh87lfXeCRaAIZkGqSUDc=
+			1T19JX74P6zJP/mnyv3Nwb3u3M3Cc0pXQoZJJUML7As=
 			</data>
 		</dict>
 		<key>Modules/kindaSwiftUI.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TlXFaYCbFRurByJgwQZ2H9VUPftLN+PTj6aWw2TVW2A=
+			4//m51SXdg3QRm2SPin53auFD4RercF/jHJqNWw/bc4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
