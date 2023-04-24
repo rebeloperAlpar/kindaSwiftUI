@@ -3,15 +3,38 @@
 // swift-module-flags: -target x86_64-apple-ios16.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name kindaSwiftUI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
+import Combine/*.Combine*/
 import Foundation
 import Swift
 import SwiftUI
 import _Concurrency
 import _StringProcessing
 @_exported import kindaSwiftUI
+public enum RequestError : Swift.Error {
+  case requestCompositionFailure
+  case unexpectedResponse
+  case decoderFailure
+  public static func == (a: kindaSwiftUI.RequestError, b: kindaSwiftUI.RequestError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct LicenseKeyStatusResult {
   public var isActive: Swift.Bool
   public var message: Swift.String
+}
+open class Request : kindaSwiftUI.HTTPRequest {
+  public var scheme: kindaSwiftUI.Scheme
+  public var host: Swift.String
+  public var path: Swift.String
+  public var port: Swift.Int?
+  public var headers: [Swift.String : Swift.String]?
+  public var queryParameters: [Swift.String : Swift.String]?
+  public var method: kindaSwiftUI.HTTPMethod
+  public var body: kindaSwiftUI.HTTPBody?
+  public init(scheme: kindaSwiftUI.Scheme, host: Swift.String, path: Swift.String, port: Swift.Int? = nil, method: kindaSwiftUI.HTTPMethod, headers: [Swift.String : Swift.String]? = nil, queryParameters: [Swift.String : Swift.String]? = nil, body: kindaSwiftUI.HTTPBody? = nil)
+  @objc deinit
 }
 public struct PresentationCompactAdaptation {
   public var horizontal: SwiftUI.PresentationAdaptation
@@ -52,6 +75,15 @@ public struct TabRoot<Destination, Tab> where Destination : kindaSwiftUI.RouterD
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI05KindaB16UI247ContentViewV4bodyQrvp", 0) __<Content>
 }
+public enum DecodingFailureStrategy {
+  case ignore
+  case raise
+  public static func == (a: kindaSwiftUI.DecodingFailureStrategy, b: kindaSwiftUI.DecodingFailureStrategy) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension SwiftUI.Color {
   public init(hex: Swift.String)
 }
@@ -59,8 +91,23 @@ extension SwiftUI.View {
   public func fullScreenCover<Destination>(for modal: Destination, onDismiss: (() -> Swift.Void)? = nil) -> some SwiftUI.View where Destination : kindaSwiftUI.RouterDestination
   
 }
+public enum Scheme : Swift.CustomStringConvertible {
+  case http
+  case https
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: kindaSwiftUI.Scheme, b: kindaSwiftUI.Scheme) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct AlertOptions {
   public init(type: kindaSwiftUI.AlertType = .alert, title: Swift.String? = nil, message: Swift.String? = nil, actions: [kindaSwiftUI.AlertAction]? = nil)
+}
+public protocol GenericEncoder {
+  func encode<T>(_ object: T) throws -> Foundation.Data where T : Swift.Encodable
 }
 public struct CustomTabRoot<Destination, Tab, UnselectedTab> where Destination : kindaSwiftUI.RouterDestination, Tab : kindaSwiftUI.RouterTab, UnselectedTab : kindaSwiftUI.RouterUnselectedTab {
   public init(_ root: Destination, tab: Tab, unselectedTab: UnselectedTab)
@@ -122,12 +169,19 @@ public struct KindaSwiftUIContentView<Content> : SwiftUI.View where Content : Sw
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI20CustomTabRouterStackV4bodyQrvp", 0) __<Destination, Tab, UnselectedTab>
 }
+extension Foundation.Data {
+  public func jsonString(pretty: Swift.Bool = false) -> Swift.String
+}
 @_Concurrency.MainActor(unsafe) public struct RouterStack<Destination> : SwiftUI.View where Destination : kindaSwiftUI.RouterDestination {
   @_Concurrency.MainActor(unsafe) public init(root: Destination)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI11RouterStackV4bodyQrvp", 0) __<Destination>
+}
+public struct RequestData {
+  public let data: Foundation.Data
+  public let response: Foundation.HTTPURLResponse
 }
 extension SwiftUI.View {
   public func `if`<Content>(_ condition: @autoclosure () -> Swift.Bool, transform: (Self) -> Content) -> some SwiftUI.View where Content : SwiftUI.View
@@ -369,6 +423,186 @@ extension SwiftUI.View {
   public func sheet<Destination>(for modal: Destination, options: kindaSwiftUI.PresentationOptions = PresentationOptions(), onDismiss: (() -> Swift.Void)? = nil) -> some SwiftUI.View where Destination : kindaSwiftUI.RouterDestination
   
 }
+public struct NetworkingError : Swift.Error, Foundation.LocalizedError {
+  public enum Status : Swift.Int {
+    case unknown
+    case networkUnreachable
+    case unableToParseResponse
+    case unableToParseRequest
+    case continueError
+    case switchingProtocols
+    case processing
+    case ok
+    case created
+    case accepted
+    case nonAuthoritativeInformation
+    case noContent
+    case resetContent
+    case partialContent
+    case multiStatus
+    case alreadyReported
+    case IMUsed
+    case multipleChoices
+    case movedPermanently
+    case found
+    case seeOther
+    case notModified
+    case useProxy
+    case switchProxy
+    case temporaryRedirect
+    case permenantRedirect
+    case badRequest
+    case unauthorized
+    case paymentRequired
+    case forbidden
+    case notFound
+    case methodNotAllowed
+    case notAcceptable
+    case proxyAuthenticationRequired
+    case requestTimeout
+    case conflict
+    case gone
+    case lengthRequired
+    case preconditionFailed
+    case payloadTooLarge
+    case uriTooLong
+    case unsupportedMediaType
+    case rangeNotSatisfiable
+    case expectationFailed
+    case teapot
+    case misdirectedRequest
+    case unprocessableEntity
+    case locked
+    case failedDependency
+    case upgradeRequired
+    case preconditionRequired
+    case tooManyRequests
+    case requestHeaderFieldsTooLarge
+    case unavailableForLegalReasons
+    case noResponse
+    case sslCertificateError
+    case sslCertificateRequired
+    case httpRequestSentToHTTPSPort
+    case clientClosedRequest
+    case internalServerError
+    case notImplemented
+    case badGateway
+    case serviceUnavailable
+    case gatewayTimeout
+    case httpVersionNotSupported
+    case variantAlsoNegotiates
+    case insufficientStorage
+    case loopDetected
+    case notExtended
+    case networkAuthenticationRequired
+    case cancelled
+    case badURL
+    case timedOut
+    case unsupportedURL
+    case cannotFindHost
+    case cannotConnectToHost
+    case networkConnectionLost
+    case dnsLookupFailed
+    case httpTooManyRedirects
+    case resourceUnavailable
+    case notConnectedToInternet
+    case redirectToNonExistentLocation
+    case badServerResponse
+    case userCancelledAuthentication
+    case userAuthenticationRequired
+    case zeroByteResource
+    case cannotDecodeRawData
+    case cannotDecodeContentData
+    case cannotParseResponse
+    case appTransportSecurityRequiresSecureConnection
+    case fileDoesNotExist
+    case fileIsDirectory
+    case noPermissionsToReadFile
+    case dataLengthExceedsMaximum
+    case secureConnectionFailed
+    case serverCertificateHasBadDate
+    case serverCertificateUntrusted
+    case serverCertificateHasUnknownRoot
+    case serverCertificateNotYetValid
+    case clientCertificateRejected
+    case CclientCertificateRequired
+    case cannotLoadFromNetwork
+    case cannotCreateFile
+    case cannotOpenFile
+    case cannotCloseFile
+    case cannotWriteToFile
+    case CcannotRemoveFile
+    case cannotMoveFile
+    case downloadDecodingFailedMidStream
+    case downloadDecodingFailedToComplete
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public var status: kindaSwiftUI.NetworkingError.Status
+  public var code: Swift.Int {
+    get
+  }
+  public var jsonPayload: Any?
+  public init(errorCode: Swift.Int)
+  public init(status: kindaSwiftUI.NetworkingError.Status)
+  public init(error: any Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension kindaSwiftUI.NetworkingError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension kindaSwiftUI.NetworkingError {
+  public static var unableToParseResponse: kindaSwiftUI.NetworkingError {
+    get
+  }
+  public static var unableToParseRequest: kindaSwiftUI.NetworkingError {
+    get
+  }
+  public static var unknownError: kindaSwiftUI.NetworkingError {
+    get
+  }
+}
+extension Swift.DecodingError {
+  public var description: Swift.String? {
+    get
+  }
+}
+@propertyWrapper @_Concurrency.MainActor(unsafe) public struct RequestResults<T, U> : SwiftUI.DynamicProperty where U : Swift.Decodable {
+  public struct Configuration {
+    public var request: kindaSwiftUI.Request
+    public var requester: kindaSwiftUI.Requester
+    public var decodingFailureStrategy: kindaSwiftUI.DecodingFailureStrategy
+    public var error: (any Swift.Error)?
+  }
+  @_Concurrency.MainActor(unsafe) public var wrappedValue: U {
+    get
+    nonmutating set
+  }
+  @_Concurrency.MainActor(unsafe) public var projectedValue: SwiftUI.Binding<U> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var configuration: kindaSwiftUI.RequestResults<T, U>.Configuration {
+    get
+    nonmutating set
+  }
+  @_Concurrency.MainActor(unsafe) public init(request: kindaSwiftUI.Request, requester: kindaSwiftUI.Requester = Requester(decoder: JSONDecoder()), decodingFailureStrategy: kindaSwiftUI.DecodingFailureStrategy = .raise) where T : Swift.Decodable, U == [T]
+  @_Concurrency.MainActor(unsafe) public init(scheme: kindaSwiftUI.Scheme, host: Swift.String, path: Swift.String, port: Swift.Int? = nil, method: kindaSwiftUI.HTTPMethod, headers: [Swift.String : Swift.String]? = nil, queryParameters: [Swift.String : Swift.String]? = nil, body: kindaSwiftUI.HTTPBody? = nil, session: Foundation.URLSession = URLSession.shared, decoder: (any kindaSwiftUI.GenericDecoder)? = JSONDecoder(), decodingFailureStrategy: kindaSwiftUI.DecodingFailureStrategy = .raise) where T : Swift.Decodable, U == [T]
+}
+public struct RequestJson {
+  public let json: Swift.String
+  public let response: Foundation.HTTPURLResponse
+}
+public struct RequestFetch<R> where R : Swift.Decodable {
+  public let result: R
+  public let response: Foundation.HTTPURLResponse
+}
 public struct PresentationOptions {
   public var detents: Swift.Set<SwiftUI.PresentationDetent>
   public var dragIndicatorVisibility: SwiftUI.Visibility
@@ -385,6 +619,10 @@ public protocol RouterTab : Swift.Hashable, SwiftUI.View {
 }
 public protocol RouterUnselectedTab : Swift.Hashable, SwiftUI.View {
 }
+public struct HTTPBody {
+  public init(data: Foundation.Data?)
+  public init<T>(_ object: T, encoder: any kindaSwiftUI.GenericEncoder = JSONEncoder()) where T : Swift.Encodable
+}
 public enum AlertPreset {
   case error, success, warning, info
   public static func == (a: kindaSwiftUI.AlertPreset, b: kindaSwiftUI.AlertPreset) -> Swift.Bool
@@ -392,6 +630,9 @@ public enum AlertPreset {
   public var hashValue: Swift.Int {
     get
   }
+}
+extension Foundation.JSONDecoder : kindaSwiftUI.GenericDecoder {
+  public func decode<T>(expect type: T.Type, from data: Foundation.Data) throws -> T where T : Swift.Decodable
 }
 public enum AlertActionLabel : Swift.String {
   case ok
@@ -417,6 +658,15 @@ public enum AlertActionLabel : Swift.String {
   public var rawValue: Swift.String {
     get
   }
+}
+public struct OptionalDataView<T, C> : SwiftUI.View where T : Swift.Decodable, C : SwiftUI.View {
+  public let data: T?
+  public var content: (T) -> C
+  public init(for data: T?, content: @escaping (T) -> C)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12kindaSwiftUI16OptionalDataViewV4bodyQrvp", 0) __<T, C>
 }
 public enum KindaSwiftUILogType : Swift.String, Swift.CaseIterable {
   case developer
@@ -448,11 +698,43 @@ public enum KindaSwiftUILogLevel {
   }
 }
 public func log(_ level: kindaSwiftUI.KindaSwiftUILogLevel = .debug, type: kindaSwiftUI.KindaSwiftUILogType = .developer, dateFormat: Swift.String = "HH:mm:ss.SSSS", _ items: Any...)
+open class Requester {
+  public init(session: Foundation.URLSession = URLSession.shared, decoder: (any kindaSwiftUI.GenericDecoder)? = JSONDecoder())
+  #if compiler(>=5.3) && $AsyncAwait
+  open func send<T, R>(_ request: T, expect type: R.Type) async throws -> kindaSwiftUI.RequestFetch<R> where T : kindaSwiftUI.HTTPRequest, R : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  open func send<T>(_ request: T, pretty: Swift.Bool = false) async throws -> kindaSwiftUI.RequestJson where T : kindaSwiftUI.HTTPRequest
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  open func send<T>(_ request: T) async throws -> kindaSwiftUI.RequestData where T : kindaSwiftUI.HTTPRequest
+  #endif
+  @objc deinit
+}
 public struct LicenseKeyCenter {
   @discardableResult
   public static func isLicenseActive() -> Swift.Bool
   @discardableResult
   public static func getLicenseKeyStatusResult() -> kindaSwiftUI.LicenseKeyStatusResult
+}
+public protocol HTTPRequest {
+  var scheme: kindaSwiftUI.Scheme { get }
+  var host: Swift.String { get }
+  var path: Swift.String { get }
+  var port: Swift.Int? { get }
+  var queryParameters: [Swift.String : Swift.String]? { get }
+  var headers: [Swift.String : Swift.String]? { get }
+  var method: kindaSwiftUI.HTTPMethod { get }
+  var body: kindaSwiftUI.HTTPBody? { get }
+  func composeRequest() -> Foundation.URLRequest?
+}
+extension kindaSwiftUI.HTTPRequest {
+  public func convert(queryParameters: [Swift.String : Swift.String]) -> [Foundation.URLQueryItem]
+  public func urlFromComponents() -> Foundation.URL?
+  public func composeRequest() -> Foundation.URLRequest?
+}
+public protocol GenericDecoder {
+  func decode<T>(expect type: T.Type, from data: Foundation.Data) throws -> T where T : Swift.Decodable
 }
 @_Concurrency.MainActor(unsafe) public struct Screen<Content> : SwiftUI.View where Content : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var content: (kindaSwiftUI.ScreenContext) -> Content
@@ -465,6 +747,30 @@ public struct LicenseKeyCenter {
 public struct ScreenContext {
   public var toastManager: kindaSwiftUI.ToastManager
   public var alertManager: kindaSwiftUI.AlertManager
+}
+public enum HTTPMethod : Swift.CustomStringConvertible {
+  case get
+  case head
+  case post
+  case put
+  case delete
+  case patch
+  case connect
+  case options
+  case trace
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: kindaSwiftUI.HTTPMethod, b: kindaSwiftUI.HTTPMethod) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol Response {
+  associatedtype T
+  var httpResponse: Foundation.HTTPURLResponse { get }
+  var result: Self.T { get }
 }
 public struct PoweredByKindaSwiftUIView : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
@@ -485,6 +791,43 @@ open class RouterModalDependencyLinker : Combine.ObservableObject {
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
+@propertyWrapper @_Concurrency.MainActor(unsafe) public struct RequestResult<T> : SwiftUI.DynamicProperty where T : Swift.Decodable {
+  public struct Configuration {
+    public var request: kindaSwiftUI.Request
+    public var requester: kindaSwiftUI.Requester
+    public var decodingFailureStrategy: kindaSwiftUI.DecodingFailureStrategy
+    public var error: (any Swift.Error)?
+  }
+  @_Concurrency.MainActor(unsafe) public var wrappedValue: T? {
+    get
+    nonmutating set
+  }
+  @_Concurrency.MainActor(unsafe) public var projectedValue: SwiftUI.Binding<T?> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var configuration: kindaSwiftUI.RequestResult<T>.Configuration {
+    get
+    nonmutating set
+  }
+  @_Concurrency.MainActor(unsafe) public init(request: kindaSwiftUI.Request, requester: kindaSwiftUI.Requester = Requester(decoder: JSONDecoder()), decodingFailureStrategy: kindaSwiftUI.DecodingFailureStrategy = .raise)
+  @_Concurrency.MainActor(unsafe) public init(scheme: kindaSwiftUI.Scheme, host: Swift.String, path: Swift.String, port: Swift.Int? = nil, method: kindaSwiftUI.HTTPMethod, headers: [Swift.String : Swift.String]? = nil, queryParameters: [Swift.String : Swift.String]? = nil, body: kindaSwiftUI.HTTPBody? = nil, session: Foundation.URLSession = URLSession.shared, decoder: (any kindaSwiftUI.GenericDecoder)? = JSONDecoder(), decodingFailureStrategy: kindaSwiftUI.DecodingFailureStrategy = .raise)
+}
+@_Concurrency.MainActor final public class RequestResultManager<T> : Foundation.ObservableObject where T : Swift.Decodable {
+  @Combine.Published @_projectedValueProperty($value) @_Concurrency.MainActor final public var value: T? {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor final public var $value: Combine.Published<T?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @_Concurrency.MainActor public init(configuration: kindaSwiftUI.RequestResult<T>.Configuration)
+  @_Concurrency.MainActor final public func fetch()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
 public enum AlertType {
   case alert, confirmationDialog
   public static func == (a: kindaSwiftUI.AlertType, b: kindaSwiftUI.AlertType) -> Swift.Bool
@@ -493,6 +836,14 @@ public enum AlertType {
     get
   }
 }
+extension Foundation.JSONEncoder : kindaSwiftUI.GenericEncoder {
+}
+extension kindaSwiftUI.RequestError : Swift.Equatable {}
+extension kindaSwiftUI.RequestError : Swift.Hashable {}
+extension kindaSwiftUI.DecodingFailureStrategy : Swift.Equatable {}
+extension kindaSwiftUI.DecodingFailureStrategy : Swift.Hashable {}
+extension kindaSwiftUI.Scheme : Swift.Equatable {}
+extension kindaSwiftUI.Scheme : Swift.Hashable {}
 extension kindaSwiftUI.PopStyle : Swift.Equatable {}
 extension kindaSwiftUI.PopStyle : Swift.Hashable {}
 extension kindaSwiftUI.PopStyle : Swift.RawRepresentable {}
@@ -502,6 +853,9 @@ extension kindaSwiftUI.ToastPreset : Swift.Equatable {}
 extension kindaSwiftUI.ToastPreset : Swift.Hashable {}
 extension kindaSwiftUI.BackgroundMaterial : Swift.Equatable {}
 extension kindaSwiftUI.BackgroundMaterial : Swift.Hashable {}
+extension kindaSwiftUI.NetworkingError.Status : Swift.Equatable {}
+extension kindaSwiftUI.NetworkingError.Status : Swift.Hashable {}
+extension kindaSwiftUI.NetworkingError.Status : Swift.RawRepresentable {}
 extension kindaSwiftUI.AlertPreset : Swift.Equatable {}
 extension kindaSwiftUI.AlertPreset : Swift.Hashable {}
 extension kindaSwiftUI.AlertActionLabel : Swift.Equatable {}
@@ -512,5 +866,8 @@ extension kindaSwiftUI.KindaSwiftUILogType : Swift.Hashable {}
 extension kindaSwiftUI.KindaSwiftUILogType : Swift.RawRepresentable {}
 extension kindaSwiftUI.KindaSwiftUILogLevel : Swift.Equatable {}
 extension kindaSwiftUI.KindaSwiftUILogLevel : Swift.Hashable {}
+extension kindaSwiftUI.HTTPMethod : Swift.Equatable {}
+extension kindaSwiftUI.HTTPMethod : Swift.Hashable {}
+extension kindaSwiftUI.RequestResultManager : Swift.Sendable {}
 extension kindaSwiftUI.AlertType : Swift.Equatable {}
 extension kindaSwiftUI.AlertType : Swift.Hashable {}
