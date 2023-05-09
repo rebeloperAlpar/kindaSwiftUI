@@ -1479,6 +1479,84 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:method:headers:body:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Request",
+                "printedName": "kindaSwiftUI.Request",
+                "usr": "s:12kindaSwiftUI7RequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "kindaSwiftUI.HTTPMethod",
+                "usr": "s:12kindaSwiftUI10HTTPMethodO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "kindaSwiftUI.HTTPBody?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPBody",
+                    "printedName": "kindaSwiftUI.HTTPBody",
+                    "usr": "s:12kindaSwiftUI8HTTPBodyV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12kindaSwiftUI7RequestC3url6method7headers4bodyACSS_AA10HTTPMethodOSDyS2SGSgAA8HTTPBodyVSgtcfc",
+            "mangledName": "$s12kindaSwiftUI7RequestC3url6method7headers4bodyACSS_AA10HTTPMethodOSDyS2SGSgAA8HTTPBodyVSgtcfc",
+            "moduleName": "kindaSwiftUI",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
           }
         ],
         "declKind": "Class",
@@ -3735,6 +3813,63 @@
             "moduleName": "kindaSwiftUI",
             "implicit": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[kindaSwiftUI.Scheme]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scheme",
+                    "printedName": "kindaSwiftUI.Scheme",
+                    "usr": "s:12kindaSwiftUI6SchemeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12kindaSwiftUI6SchemeO8allCasesSayACGvpZ",
+            "mangledName": "$s12kindaSwiftUI6SchemeO8allCasesSayACGvpZ",
+            "moduleName": "kindaSwiftUI",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[kindaSwiftUI.Scheme]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scheme",
+                        "printedName": "kindaSwiftUI.Scheme",
+                        "usr": "s:12kindaSwiftUI6SchemeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12kindaSwiftUI6SchemeO8allCasesSayACGvgZ",
+                "mangledName": "$s12kindaSwiftUI6SchemeO8allCasesSayACGvgZ",
+                "moduleName": "kindaSwiftUI",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -3766,6 +3901,36 @@
             "printedName": "CustomStringConvertible",
             "usr": "s:s23CustomStringConvertibleP",
             "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[kindaSwiftUI.Scheme]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scheme",
+                        "printedName": "kindaSwiftUI.Scheme",
+                        "usr": "s:12kindaSwiftUI6SchemeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -23562,6 +23727,48 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Requester\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 1675,
+      "length": 17,
+      "value": "\"Host is missing\""
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Requester\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 1787,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Requester\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 1836,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Requester\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 1887,
+      "length": 6,
+      "value": "\"http\""
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Requester\/Request.swift",
+      "kind": "Array",
+      "offset": 2100,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Requester\/Request.swift",
+      "kind": "StringLiteral",
+      "offset": 2326,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/PageAndScreen\/Page.swift",
       "kind": "StringLiteral",
       "offset": 2194,
@@ -23697,14 +23904,14 @@
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Requester\/Scheme.swift",
       "kind": "StringLiteral",
-      "offset": 275,
+      "offset": 289,
       "length": 6,
       "value": "\"http\""
     },
     {
       "filePath": "\/Users\/rebeloper\/GitHubAlpar\/kindaSwiftUI\/Build\/kindaSwiftUI\/Sources\/kindaSwiftUI\/Requester\/Scheme.swift",
       "kind": "StringLiteral",
-      "offset": 322,
+      "offset": 336,
       "length": 7,
       "value": "\"https\""
     },

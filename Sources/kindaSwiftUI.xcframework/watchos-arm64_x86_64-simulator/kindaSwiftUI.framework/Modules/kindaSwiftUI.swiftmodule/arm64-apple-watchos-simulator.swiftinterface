@@ -34,6 +34,7 @@ open class Request : kindaSwiftUI.HTTPRequest {
   public var method: kindaSwiftUI.HTTPMethod
   public var body: kindaSwiftUI.HTTPBody?
   public init(scheme: kindaSwiftUI.Scheme, host: Swift.String, path: Swift.String, port: Swift.Int? = nil, method: kindaSwiftUI.HTTPMethod, headers: [Swift.String : Swift.String]? = nil, queryParameters: [Swift.String : Swift.String]? = nil, body: kindaSwiftUI.HTTPBody? = nil)
+  convenience public init(url: Swift.String, method: kindaSwiftUI.HTTPMethod, headers: [Swift.String : Swift.String]? = nil, body: kindaSwiftUI.HTTPBody? = nil)
   @objc deinit
 }
 public struct PresentationCompactAdaptation {
@@ -90,7 +91,7 @@ extension SwiftUI.View {
   public func fullScreenCover<Destination>(for modal: Destination, onDismiss: (() -> Swift.Void)? = nil) -> some SwiftUI.View where Destination : kindaSwiftUI.RouterDestination
   
 }
-public enum Scheme : Swift.CustomStringConvertible {
+public enum Scheme : Swift.CustomStringConvertible, Swift.CaseIterable {
   case http
   case https
   public var description: Swift.String {
@@ -98,6 +99,10 @@ public enum Scheme : Swift.CustomStringConvertible {
   }
   public static func == (a: kindaSwiftUI.Scheme, b: kindaSwiftUI.Scheme) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [kindaSwiftUI.Scheme]
+  public static var allCases: [kindaSwiftUI.Scheme] {
+    get
+  }
   public var hashValue: Swift.Int {
     get
   }
